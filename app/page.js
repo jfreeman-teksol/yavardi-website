@@ -1,5 +1,4 @@
 'use client';
-
 import React, { useState, useEffect } from 'react';
 
 export default function YavardiWebsite() {
@@ -63,29 +62,29 @@ export default function YavardiWebsite() {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'center',
-        background: 'linear-gradient(135deg, #dbdbdb 0%, #e8e8e8 100%)',
+        justifyContent: 'flex-start',
         position: 'relative',
         overflow: 'hidden',
-        padding: '0 1.5rem',
-        paddingTop: '100px'
+        paddingTop: '70px'
       }}>
-        {/* Top portion with lines - contains headline and question */}
+        {/* Top portion - BLUE with lines */}
         <div style={{
           position: 'relative',
           width: '100%',
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center'
+          alignItems: 'center',
+          background: '#000000',
+          padding: '4rem 1.5rem 3rem'
         }}>
           <div style={{
             position: 'absolute',
-            top: '-100px',
+            top: 0,
             left: 0,
             right: 0,
             bottom: 0,
             opacity: 0.04,
-            backgroundImage: 'repeating-linear-gradient(45deg, #000 0, #000 1px, transparent 0, transparent 50%)',
+            backgroundImage: 'repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)',
             backgroundSize: '12px 12px'
           }} />
           
@@ -94,24 +93,23 @@ export default function YavardiWebsite() {
             margin: '0 auto', 
             textAlign: 'center', 
             position: 'relative', 
-            zIndex: 1,
-            padding: '3rem 0 2rem'
+            zIndex: 1
           }}>
             <h1 style={{ 
               fontSize: 'clamp(1.85rem, 4.5vw, 2.5rem)', 
               fontWeight: 900, 
               marginBottom: '2.5rem', 
-              color: '#000',
+              color: '#FFFFFF',
               lineHeight: 1.3,
               letterSpacing: '-0.01em'
             }}>
-              Your firm executes $15 million in billable work every year.
+              Your firm executes over $10 million in billable work every year.
             </h1>
             
             <p style={{
               fontSize: 'clamp(1.35rem, 3vw, 1.85rem)',
               fontWeight: 900,
-              color: '#000',
+              color: '#FFFFFF',
               marginBottom: '0',
               letterSpacing: '-0.01em'
             }}>
@@ -120,82 +118,91 @@ export default function YavardiWebsite() {
           </div>
         </div>
         
-        {/* Bottom portion without lines - contains rest of hero content */}
-        <div style={{ 
-          maxWidth: '1000px', 
-          margin: '0 auto', 
-          textAlign: 'center', 
-          position: 'relative', 
-          zIndex: 1,
-          padding: '2.5rem 0 3rem'
+        {/* Bottom portion - GRAY without lines */}
+        <div style={{
+          width: '100%',
+          background: 'linear-gradient(135deg, #dbdbdb 0%, #e8e8e8 100%)',
+          padding: '3rem 1.5rem 4rem',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          flex: 1
         }}>
-          <div style={{
-            fontSize: 'clamp(1.1rem, 2vw, 1.35rem)',
-            lineHeight: 1.8,
-            color: '#000',
-            marginBottom: '2.5rem',
-            fontWeight: 600,
-            maxWidth: '900px',
-            margin: '0 auto 2.5rem'
+          <div style={{ 
+            maxWidth: '1000px', 
+            margin: '0 auto', 
+            textAlign: 'center', 
+            position: 'relative', 
+            zIndex: 1
           }}>
-            <p style={{ marginBottom: '1.5rem' }}>
-              When authorization isn't captured in real-time, billing review becomes exposure management.
-            </p>
-            <p style={{ marginBottom: '1.5rem' }}>
-              Partners write down defensible work because they can't prove approval. Senior attorneys burn billable hours reconstructing old decisions. Disputes escalate because authority records don't exist.
-            </p>
-          </div>
-          
-          <p style={{
-            fontSize: 'clamp(1.5rem, 3.5vw, 2rem)',
-            fontWeight: 900,
-            color: '#000',
-            marginBottom: '1.5rem',
-            letterSpacing: '-0.01em'
-          }}>
-            This is your Reconstruction Tax.
-          </p>
-          
-          <p style={{
-            fontSize: 'clamp(1.1rem, 2vw, 1.35rem)',
-            fontWeight: 600,
-            color: '#333',
-            marginBottom: '3rem'
-          }}>
-            For a 35-attorney litigation practice, it costs over $1 million annually.
-          </p>
-          
-          <p style={{
-            fontSize: 'clamp(1.35rem, 3vw, 1.85rem)',
-            fontWeight: 900,
-            color: '#000',
-            marginBottom: '3rem',
-            letterSpacing: '-0.01em'
-          }}>
-            Yavardi closes the gap that causes it.
-          </p>
-          
-          <a 
-            href="https://calendly.com/jfreeman-yavardi/yavardi-governance-examination"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              display: 'inline-block',
-              background: '#0a1628',
-              color: '#fff',
-              padding: 'clamp(0.875rem, 2vw, 1.125rem) clamp(1.75rem, 4vw, 2.75rem)',
-              borderRadius: '3px',
-              textDecoration: 'none',
+            <div style={{
+              fontSize: 'clamp(1.1rem, 2vw, 1.35rem)',
+              lineHeight: 1.8,
+              color: '#000',
+              marginBottom: '2.5rem',
+              fontWeight: 600,
+              maxWidth: '900px',
+              margin: '0 auto 2.5rem'
+            }}>
+              <p style={{ marginBottom: '1.5rem' }}>
+                When authorization isn't captured in real-time, billing review becomes exposure management.
+              </p>
+              <p style={{ marginBottom: '1.5rem' }}>
+                Partners write down defensible work because they can't prove approval. Senior attorneys burn billable hours reconstructing old decisions. Disputes escalate because authority records don't exist.
+              </p>
+            </div>
+            
+            <p style={{
+              fontSize: 'clamp(1.5rem, 3.5vw, 2rem)',
               fontWeight: 900,
-              fontSize: 'clamp(1rem, 2vw, 1.15rem)',
-              transition: 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)',
-              boxShadow: '0 4px 12px rgba(30, 58, 138, 0.15)',
-              border: 'none',
-              cursor: 'pointer'
-            }}
-          >
-            Schedule Governance Examination
-          </a>
+              color: '#000',
+              marginBottom: '1.5rem',
+              letterSpacing: '-0.01em'
+            }}>
+              This is your Reconstruction Tax.
+            </p>
+            
+            <p style={{
+              fontSize: 'clamp(1.1rem, 2vw, 1.35rem)',
+              fontWeight: 600,
+              color: '#333',
+              marginBottom: '3rem'
+            }}>
+              For a 35-attorney litigation practice, it costs over $1.5 million annually.
+            </p>
+            
+            <p style={{
+              fontSize: 'clamp(1.35rem, 3vw, 1.85rem)',
+              fontWeight: 900,
+              color: '#000',
+              marginBottom: '3rem',
+              letterSpacing: '-0.01em'
+            }}>
+              Yavardi closes the gap that causes it.
+            </p>
+            
+            <a 
+              href="https://calendly.com/jfreeman-yavardi/yavardi-governance-examination"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-block',
+                background: '#000000',
+                color: '#fff',
+                padding: 'clamp(0.875rem, 2vw, 1.125rem) clamp(1.75rem, 4vw, 2.75rem)',
+                borderRadius: '3px',
+                textDecoration: 'none',
+                fontWeight: 900,
+                fontSize: 'clamp(1rem, 2vw, 1.15rem)',
+                transition: 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)',
+                boxShadow: '0 4px 12px rgba(30, 58, 138, 0.15)',
+                border: 'none',
+                cursor: 'pointer'
+              }}
+            >
+              Schedule Governance Examination
+            </a>
+          </div>
         </div>
       </section>
 
@@ -236,7 +243,7 @@ export default function YavardiWebsite() {
             textAlign: 'center',
             fontWeight: 600
           }}>
-            Mid-sized litigation practices lose over $1 million annually to pre-invoice write-downs and reconstruction labor.
+            Mid-sized litigation practices lose over $1.5 million annually to pre-invoice write-downs and reconstruction labor.
           </p>
           
           {/* Revenue Loss */}
@@ -262,7 +269,7 @@ export default function YavardiWebsite() {
               fontWeight: 500,
               marginBottom: '1.25rem'
             }}>
-              When recorded billable work reaches billing review without proof of authorization, firms reduce invoices to limit exposure. For a 35-attorney firm recording $15 million in billable work annually, industry-standard realization rates mean roughly $1.8 million in recorded value gets written down before invoicing.
+              When recorded billable work reaches billing review without proof of authorization, firms reduce invoices to limit exposure. For a 35-attorney firm recording over $10 million in billable work annually, industry-standard realization rates mean roughly $1.6 million in recorded value gets written down before invoicing.
             </p>
             <p style={{
               fontSize: 'clamp(1rem, 2vw, 1.15rem)',
@@ -327,24 +334,36 @@ export default function YavardiWebsite() {
             </p>
           </div>
           
-          {/* What Yavardi Addresses */}
+          {/* Dominion Intro */}
+          <p style={{
+            fontSize: 'clamp(1.1rem, 2vw, 1.25rem)',
+            lineHeight: 1.8,
+            color: '#b0b0b0',
+            fontWeight: 600,
+            marginBottom: 'clamp(2rem, 4vw, 2.5rem)',
+            textAlign: 'center'
+          }}>
+            Yavardi's flagship Dominion governance platform deploys as infrastructure within your Microsoft environment to eliminate the structural cause of Reconstruction Tax.
+          </p>
+          
+          {/* What Dominion Addresses */}
           <div style={{
-            background: '#060d14',
+            background: '#DBDBDB',
             padding: 'clamp(1.5rem, 3vw, 2rem)',
             borderRadius: '4px'
           }}>
             <h3 style={{
               fontSize: 'clamp(1.3rem, 3vw, 1.6rem)',
               fontWeight: 900,
-              color: '#fff',
+              color: '#000000',
               marginBottom: '1.25rem'
             }}>
-              What Yavardi Addresses
+              What Dominion Addresses
             </h3>
             <p style={{
               fontSize: 'clamp(1rem, 2vw, 1.15rem)',
               lineHeight: 1.8,
-              color: 'rgba(255, 255, 255, 0.8)',
+              color: '#333',
               fontWeight: 500,
               marginBottom: '1.25rem'
             }}>
@@ -353,11 +372,147 @@ export default function YavardiWebsite() {
             <p style={{
               fontSize: 'clamp(1rem, 2vw, 1.15rem)',
               lineHeight: 1.8,
-              color: '#fff',
+              color: '#000000',
               fontWeight: 700
             }}>
-              Yavardi targets the portion caused by missing authority, unclear scope, and absent execution evidence during billing review.
+              Dominion targets the portion caused by missing authority, unclear scope, and absent execution evidence during billing review.
             </p>
+          </div>
+          
+          {/* Reconstruction Tax Diagram */}
+          <div style={{ marginTop: 'clamp(3rem, 6vw, 4rem)' }}>
+            <h3 style={{
+              fontSize: 'clamp(1.3rem, 3vw, 1.6rem)',
+              fontWeight: 900,
+              color: '#fff',
+              marginBottom: '1.5rem',
+              textAlign: 'center'
+            }}>
+              How Authority Capture Changes the Outcome
+            </h3>
+            <div style={{
+              background: '#DBDBDB',
+              borderRadius: '8px',
+              padding: '1rem',
+              overflow: 'hidden'
+            }}>
+              <svg width="100%" viewBox="0 0 1800 1400" xmlns="http://www.w3.org/2000/svg" style={{ display: 'block' }}>
+                <defs>
+                  <linearGradient id="gradLeftBox2" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stopColor="#F8B461" stopOpacity="1" />
+                    <stop offset="100%" stopColor="#E89A47" stopOpacity="1" />
+                  </linearGradient>
+                  <linearGradient id="gradLeftBox3" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stopColor="#E85D47" stopOpacity="1" />
+                    <stop offset="100%" stopColor="#D63C2F" stopOpacity="1" />
+                  </linearGradient>
+                  <linearGradient id="gradLeftBox4" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stopColor="#C0392B" stopOpacity="1" />
+                    <stop offset="100%" stopColor="#8B0000" stopOpacity="1" />
+                  </linearGradient>
+                  <linearGradient id="gradLeftBox5" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stopColor="#8B0000" stopOpacity="1" />
+                    <stop offset="100%" stopColor="#5C0000" stopOpacity="1" />
+                  </linearGradient>
+                  <linearGradient id="gradRightBox2" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stopColor="#B8E4C8" stopOpacity="1" />
+                    <stop offset="100%" stopColor="#95D5A8" stopOpacity="1" />
+                  </linearGradient>
+                  <linearGradient id="gradRightBox3" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stopColor="#52B788" stopOpacity="1" />
+                    <stop offset="100%" stopColor="#3D9E71" stopOpacity="1" />
+                  </linearGradient>
+                  <linearGradient id="gradRightBox4" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stopColor="#2D6A4F" stopOpacity="1" />
+                    <stop offset="100%" stopColor="#1F4D37" stopOpacity="1" />
+                  </linearGradient>
+                  <linearGradient id="gradRightBox5" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stopColor="#1B4332" stopOpacity="1" />
+                    <stop offset="100%" stopColor="#0B3620" stopOpacity="1" />
+                  </linearGradient>
+                  <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feDropShadow dx="0" dy="4" stdDeviation="6" floodOpacity="0.25" floodColor="#000000"/>
+                  </filter>
+                </defs>
+                <rect width="1800" height="1400" fill="#dbdbdb"/>
+                <text x="400" y="55" textAnchor="middle" fontSize="26" fontWeight="700" fill="#000000">Before Dominion</text>
+                <text x="400" y="85" textAnchor="middle" fontSize="16" fontWeight="400" fill="#000000">(Status Quo)</text>
+                <text x="1400" y="55" textAnchor="middle" fontSize="26" fontWeight="700" fill="#000000">After Dominion</text>
+                <text x="1400" y="85" textAnchor="middle" fontSize="16" fontWeight="400" fill="#000000">(With Authority Capture)</text>
+                <line x1="900" y1="120" x2="900" y2="1250" stroke="#B8B8B8" strokeWidth="1" strokeDasharray="8,8"/>
+                <rect x="80" y="130" width="640" height="100" rx="8" ry="8" fill="#F5F5F5" stroke="#DCDCDC" strokeWidth="1" filter="url(#shadow)"/>
+                <text x="400" y="165" textAnchor="middle" fontSize="18" fontWeight="700" fill="#000000">Scope Change Occurs</text>
+                <text x="400" y="195" textAnchor="middle" fontSize="14" fontWeight="600" fill="#000000">Additional custodians identified, discovery expands</text>
+                <line x1="400" y1="230" x2="400" y2="255" stroke="#999999" strokeWidth="2"/>
+                <polygon points="400,265 395,255 405,255" fill="#999999"/>
+                <text x="400" y="295" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">No formal capture</text>
+                <rect x="80" y="305" width="640" height="170" rx="8" ry="8" fill="url(#gradLeftBox2)" filter="url(#shadow)"/>
+                <text x="400" y="360" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Work Proceeds Without Authority Record</text>
+                <text x="400" y="390" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Paralegal records time. Associates bill hours.</text>
+                <text x="400" y="412" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Partners approve informally via in-person conversations,</text>
+                <text x="400" y="434" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Teams, or email. No formal record exists.</text>
+                <line x1="400" y1="475" x2="400" y2="500" stroke="#E89A47" strokeWidth="2"/>
+                <polygon points="400,510 395,500 405,500" fill="#E89A47"/>
+                <text x="400" y="540" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Months pass</text>
+                <rect x="80" y="560" width="640" height="170" rx="8" ry="8" fill="url(#gradLeftBox3)" filter="url(#shadow)"/>
+                <text x="400" y="600" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Billing Review Questions Charges</text>
+                <text x="400" y="635" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Partner cannot prove scope was approved.</text>
+                <text x="400" y="657" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Charges are indefensible.</text>
+                <text x="400" y="690" textAnchor="middle" fontSize="19" fontWeight="700" fill="#FFD166">Over $250,000 written down</text>
+                <line x1="400" y1="730" x2="400" y2="755" stroke="#D63C2F" strokeWidth="2"/>
+                <polygon points="400,765 395,755 405,755" fill="#D63C2F"/>
+                <text x="400" y="805" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Escalation</text>
+                <rect x="80" y="825" width="640" height="170" rx="8" ry="8" fill="url(#gradLeftBox4)" filter="url(#shadow)"/>
+                <text x="400" y="860" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Senior Attorney Reconstructs Approval</text>
+                <text x="400" y="895" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">15+ hours searching emails, chats, files</text>
+                <text x="400" y="917" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">trying to establish decision trail.</text>
+                <text x="400" y="950" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">No proof exists.</text>
+                <line x1="400" y1="995" x2="400" y2="1020" stroke="#8B0000" strokeWidth="2"/>
+                <polygon points="400,1030 395,1020 405,1020" fill="#8B0000"/>
+                <text x="400" y="1070" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Revenue loss</text>
+                <rect x="80" y="1090" width="640" height="170" rx="8" ry="8" fill="url(#gradLeftBox5)" filter="url(#shadow)"/>
+                <text x="400" y="1120" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Reconstruction Tax Paid</text>
+                <text x="400" y="1160" textAnchor="middle" fontSize="24" fontWeight="700" fill="#FFD166">Over $1.5 million annually</text>
+                <text x="400" y="1200" textAnchor="middle" fontSize="13" fontWeight="600" fill="#FFFFFF">Conservative floor for mid-sized firm</text>
+                <text x="400" y="1228" textAnchor="middle" fontSize="12" fontWeight="500" fill="#FFFFFF">Authority-driven losses accumulate invisibly</text>
+                <rect x="1080" y="130" width="640" height="100" rx="8" ry="8" fill="#F5F5F5" stroke="#DCDCDC" strokeWidth="1" filter="url(#shadow)"/>
+                <text x="1400" y="165" textAnchor="middle" fontSize="18" fontWeight="700" fill="#000000">Scope Change Occurs</text>
+                <text x="1400" y="195" textAnchor="middle" fontSize="14" fontWeight="600" fill="#000000">Additional custodians identified, discovery expands</text>
+                <line x1="1400" y1="230" x2="1400" y2="255" stroke="#52B788" strokeWidth="2"/>
+                <polygon points="1400,265 1395,255 1405,255" fill="#52B788"/>
+                <text x="1400" y="295" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Authority requested</text>
+                <rect x="1080" y="305" width="640" height="190" rx="8" ry="8" fill="url(#gradRightBox2)" filter="url(#shadow)"/>
+                <text x="1400" y="340" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Approval Captured in Real Time ✓</text>
+                <text x="1400" y="370" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Approver is notified approval is needed.</text>
+                <text x="1400" y="392" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Approver clicks approval link. Reviews scope and cost.</text>
+                <text x="1400" y="414" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Approves or declines in 20 seconds.</text>
+                <text x="1400" y="450" textAnchor="middle" fontSize="13" fontWeight="700" fill="#FFFFFF">AUTH-2025-00142 generated</text>
+                <line x1="1400" y1="495" x2="1400" y2="520" stroke="#52B788" strokeWidth="2"/>
+                <polygon points="1400,530 1395,520 1405,520" fill="#52B788"/>
+                <text x="1400" y="565" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Record exists</text>
+                <rect x="1080" y="590" width="640" height="170" rx="8" ry="8" fill="url(#gradRightBox3)" filter="url(#shadow)"/>
+                <text x="1400" y="620" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Billing Review Pulls Authority Record</text>
+                <text x="1400" y="655" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Partner pulls AUTH-2025-00142 instantly.</text>
+                <text x="1400" y="677" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Complete approval packet available: who, when, what.</text>
+                <text x="1400" y="715" textAnchor="middle" fontSize="14" fontWeight="700" fill="#FFFFFF">Defensibility is certain.</text>
+                <line x1="1400" y1="760" x2="1400" y2="785" stroke="#3D9E71" strokeWidth="2"/>
+                <polygon points="1400,795 1395,785 1405,785" fill="#3D9E71"/>
+                <text x="1400" y="830" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Zero reconstruction</text>
+                <rect x="1080" y="855" width="640" height="170" rx="8" ry="8" fill="url(#gradRightBox4)" filter="url(#shadow)"/>
+                <text x="1400" y="885" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Zero Reconstruction Labor</text>
+                <text x="1400" y="920" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">No searching. No email mining. No uncertainty.</text>
+                <text x="1400" y="942" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Authority is immutable and exportable.</text>
+                <text x="1400" y="975" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Senior time stays on revenue work.</text>
+                <line x1="1400" y1="1025" x2="1400" y2="1050" stroke="#1F4D37" strokeWidth="2"/>
+                <polygon points="1400,1060 1395,1050 1405,1050" fill="#1F4D37"/>
+                <text x="1400" y="1100" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Revenue protected</text>
+                <rect x="1080" y="1130" width="640" height="170" rx="8" ry="8" fill="url(#gradRightBox5)" filter="url(#shadow)"/>
+                <text x="1400" y="1160" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Reconstruction Tax Eliminated</text>
+                <text x="1400" y="1205" textAnchor="middle" fontSize="24" fontWeight="700" fill="#B7E4C7">$280,000–$320,000 recovered annually</text>
+                <text x="1400" y="1245" textAnchor="middle" fontSize="13" fontWeight="600" fill="#FFFFFF">Realistic recovery from authority-driven gaps</text>
+                <text x="1400" y="1273" textAnchor="middle" fontSize="12" fontWeight="500" fill="#FFFFFF">Revenue and capacity protected going forward</text>
+              </svg>
+            </div>
           </div>
         </div>
       </section>
@@ -384,7 +539,7 @@ export default function YavardiWebsite() {
             margin: '0 auto 1rem',
             fontWeight: 600
           }}>
-            Yavardi governs execution, not intention. We focus on the points where informal decisions become irreversible system actions.
+            Dominion governs execution, not intention. Yavardi's platform focuses on the points where informal decisions become irreversible system actions.
           </p>
           <p style={{ 
             fontSize: 'clamp(1.1rem, 2vw, 1.25rem)', 
@@ -485,7 +640,7 @@ export default function YavardiWebsite() {
                 background: '#DBDBDB',
                 padding: 'clamp(1.25rem, 3vw, 1.75rem) clamp(1.5rem, 4vw, 2.25rem)',
                 borderRadius: '4px',
-                borderLeft: '4px solid #0a1628',
+                borderLeft: '4px solid #000000',
                 boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
                 fontSize: 'clamp(1rem, 2vw, 1.1rem)',
                 fontWeight: 600
@@ -537,7 +692,7 @@ export default function YavardiWebsite() {
               Write-downs happen gradually across hundreds of matters. Reconstruction labor gets absorbed into normal operations. The cost is real, but invisible. It shows up as margin pressure, not as a line item anyone tracks.
             </p>
             <p style={{ color: '#000', fontWeight: 700 }}>
-              Governance eliminates the structural cause. Once authority capture is in place, the tax stops accruing.
+              Dominion eliminates the structural cause. Once authority capture infrastructure is in place, the tax stops accruing.
             </p>
           </div>
         </div>
@@ -550,7 +705,7 @@ export default function YavardiWebsite() {
       }}>
         <div style={{ maxWidth: '700px', margin: '0 auto' }}>
           <div style={{
-            background: 'linear-gradient(180deg, #0a1628 0%, #061018 100%)',
+            background: 'linear-gradient(180deg, #000000 0%, #061018 100%)',
             borderRadius: '16px',
             padding: 'clamp(3rem, 6vw, 4.5rem) clamp(2rem, 5vw, 3.5rem)',
             textAlign: 'center',
@@ -611,6 +766,60 @@ export default function YavardiWebsite() {
           </div>
         </div>
       </section>
+
+      {/* About / Founder Section */}
+      <section style={{ 
+        padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
+        background: '#000000',
+        position: 'relative'
+      }}>
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          opacity: 0.02,
+          backgroundImage: 'repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)',
+          backgroundSize: '20px 20px'
+        }} />
+        
+        <div style={{ maxWidth: '800px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
+          <div>
+            <a 
+              href="https://www.linkedin.com/in/jonathan-freeman-1a5a6495/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none' }}
+            >
+              <h3 style={{
+                fontSize: 'clamp(1.5rem, 3vw, 1.75rem)',
+                fontWeight: 900,
+                color: '#DBDBDB',
+                marginBottom: '0.5rem'
+              }}>
+                Jonathan Freeman
+              </h3>
+            </a>
+            <p style={{
+              fontSize: 'clamp(0.95rem, 2vw, 1.05rem)',
+              color: '#999',
+              fontWeight: 600,
+              marginBottom: '1.5rem'
+            }}>
+              Founder
+            </p>
+            <p style={{
+              fontSize: 'clamp(1.05rem, 2vw, 1.15rem)',
+              lineHeight: 1.8,
+              color: '#b0b0b0',
+              fontWeight: 600
+            }}>
+              "I've spent years building enterprise infrastructure for legal operations at national scale. Dominion exists because I kept seeing the same problem: firms had the right tools but no governance over how those tools executed legally consequential work. Yavardi deploys that governance as infrastructure."
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   );
 
@@ -622,7 +831,7 @@ export default function YavardiWebsite() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        background: 'linear-gradient(135deg, #dbdbdb 0%, #e8e8e8 100%)',
+        background: '#000000',
         position: 'relative',
         overflow: 'hidden',
         padding: 'clamp(5rem, 8vw, 6rem) 1.5rem clamp(2.5rem, 4vw, 3.5rem)'
@@ -634,7 +843,7 @@ export default function YavardiWebsite() {
           right: 0,
           bottom: 0,
           opacity: 0.04,
-          backgroundImage: 'repeating-linear-gradient(45deg, #000 0, #000 1px, transparent 0, transparent 50%)',
+          backgroundImage: 'repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)',
           backgroundSize: '12px 12px'
         }} />
         
@@ -649,7 +858,7 @@ export default function YavardiWebsite() {
             fontSize: 'clamp(2.5rem, 6vw, 3.5rem)', 
             fontWeight: 900, 
             marginBottom: '2rem', 
-            color: '#000',
+            color: '#FFFFFF',
             lineHeight: 1.2,
             letterSpacing: '-0.02em'
           }}>
@@ -659,7 +868,7 @@ export default function YavardiWebsite() {
           <p style={{
             fontSize: 'clamp(1.1rem, 2.5vw, 1.35rem)',
             lineHeight: 1.7,
-            color: '#333',
+            color: 'rgba(255, 255, 255, 0.8)',
             fontWeight: 600,
             maxWidth: '750px',
             margin: '0 auto'
@@ -701,6 +910,129 @@ export default function YavardiWebsite() {
           }}>
             We work with firms whose legal operations rely on digital systems to manage documents, billing, communication, access, and workflow, and where informal execution creates operational, financial, and legal exposure.
           </p>
+        </div>
+      </section>
+
+      {/* The Dominion Platform */}
+      <section style={{ 
+        padding: 'clamp(3rem, 6vw, 5rem) clamp(1.5rem, 5vw, 2.5rem)', 
+        background: '#000000',
+        position: 'relative'
+      }}>
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          opacity: 0.04,
+          backgroundImage: 'repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)',
+          backgroundSize: '12px 12px'
+        }} />
+        
+        <div style={{ maxWidth: '900px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
+          <h2 style={{ 
+            fontSize: 'clamp(2rem, 4vw, 2.5rem)', 
+            fontWeight: 900, 
+            marginBottom: '1.5rem', 
+            color: '#DBDBDB',
+            letterSpacing: '-0.02em',
+            textAlign: 'center'
+          }}>
+            The Dominion Platform
+          </h2>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.1rem, 2vw, 1.25rem)', 
+            lineHeight: 1.8, 
+            color: '#b0b0b0',
+            fontWeight: 600,
+            marginBottom: '2rem',
+            textAlign: 'center'
+          }}>
+            Dominion is Yavardi's governance platform for law firms. It deploys as infrastructure within your Microsoft environment to enforce authority controls at the system level.
+          </p>
+          
+          <div style={{
+            background: 'rgba(219, 219, 219, 0.1)',
+            padding: 'clamp(2rem, 4vw, 3rem)',
+            borderRadius: '4px',
+            borderLeft: '4px solid #DBDBDB'
+          }}>
+            <h3 style={{
+              fontSize: 'clamp(1.3rem, 3vw, 1.6rem)',
+              fontWeight: 900,
+              color: '#DBDBDB',
+              marginBottom: '1.5rem'
+            }}>
+              Platform Architecture
+            </h3>
+            
+            <div style={{ marginBottom: '1.5rem' }}>
+              <p style={{
+                fontSize: 'clamp(1.05rem, 2vw, 1.2rem)',
+                lineHeight: 1.8,
+                color: '#b0b0b0',
+                fontWeight: 600
+              }}>
+                <strong style={{ color: '#fff' }}>Tier 1: Environment Governance</strong><br/>
+                Establishes system boundaries and authorized identities
+              </p>
+            </div>
+            
+            <div style={{ marginBottom: '1.5rem' }}>
+              <p style={{
+                fontSize: 'clamp(1.05rem, 2vw, 1.2rem)',
+                lineHeight: 1.8,
+                color: '#b0b0b0',
+                fontWeight: 600
+              }}>
+                <strong style={{ color: '#fff' }}>Tier 2: Workflow Governance</strong><br/>
+                Binds authority to execution across billing, documents, and matter flow
+              </p>
+            </div>
+            
+            <div style={{ marginBottom: '2rem' }}>
+              <p style={{
+                fontSize: 'clamp(1.05rem, 2vw, 1.2rem)',
+                lineHeight: 1.8,
+                color: '#b0b0b0',
+                fontWeight: 600
+              }}>
+                <strong style={{ color: '#fff' }}>Tier 3: Intelligence Layer</strong><br/>
+                Provides knowledge access using only approved and final firm artifacts
+              </p>
+            </div>
+            
+            <p style={{
+              fontSize: 'clamp(1.05rem, 2vw, 1.2rem)',
+              lineHeight: 1.8,
+              color: '#fff',
+              fontWeight: 700,
+              textAlign: 'center'
+            }}>
+              Every engagement begins with Tier 1. Tier 2 builds on that foundation. Tier 3 is optional and operates entirely within the governed environment.
+            </p>
+          </div>
+          
+          <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
+            <a 
+              onClick={() => navigateTo('dominion')}
+              style={{
+                display: 'inline-block',
+                background: '#DBDBDB',
+                color: '#000',
+                padding: 'clamp(0.875rem, 2vw, 1rem) clamp(2rem, 4vw, 2.5rem)',
+                borderRadius: '6px',
+                textDecoration: 'none',
+                fontWeight: 700,
+                fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)',
+                cursor: 'pointer'
+              }}
+            >
+              Learn More About Dominion →
+            </a>
+          </div>
         </div>
       </section>
 
@@ -896,7 +1228,7 @@ export default function YavardiWebsite() {
       }}>
         <div style={{ maxWidth: '700px', margin: '0 auto' }}>
           <div style={{
-            background: 'linear-gradient(180deg, #0a1628 0%, #061018 100%)',
+            background: 'linear-gradient(180deg, #000000 0%, #061018 100%)',
             borderRadius: '16px',
             padding: 'clamp(3rem, 6vw, 4.5rem) clamp(2rem, 5vw, 3.5rem)',
             textAlign: 'center',
@@ -960,7 +1292,7 @@ export default function YavardiWebsite() {
     </>
   );
 
-  const CaseRecordsPage = () => (
+  const DominionPage = () => (
     <>
       {/* Hero */}
       <section style={{
@@ -968,7 +1300,7 @@ export default function YavardiWebsite() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        background: 'linear-gradient(135deg, #dbdbdb 0%, #e8e8e8 100%)',
+        background: '#000000',
         position: 'relative',
         overflow: 'hidden',
         padding: 'clamp(5rem, 8vw, 6rem) 1.5rem clamp(2.5rem, 4vw, 3.5rem)'
@@ -980,7 +1312,7 @@ export default function YavardiWebsite() {
           right: 0,
           bottom: 0,
           opacity: 0.04,
-          backgroundImage: 'repeating-linear-gradient(45deg, #000 0, #000 1px, transparent 0, transparent 50%)',
+          backgroundImage: 'repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)',
           backgroundSize: '12px 12px'
         }} />
         
@@ -995,7 +1327,681 @@ export default function YavardiWebsite() {
             fontSize: 'clamp(2.5rem, 6vw, 3.5rem)', 
             fontWeight: 900, 
             marginBottom: '2rem', 
+            color: '#FFFFFF',
+            lineHeight: 1.2,
+            letterSpacing: '-0.02em'
+          }}>
+            The Dominion Platform
+          </h1>
+          
+          <p style={{
+            fontSize: 'clamp(1.1rem, 2.5vw, 1.35rem)',
+            lineHeight: 1.7,
+            color: 'rgba(255, 255, 255, 0.8)',
+            fontWeight: 600,
+            maxWidth: '750px',
+            margin: '0 auto'
+          }}>
+            Authority capture infrastructure for law firms. Dominion deploys within your Microsoft environment to bind approval to execution at the system level.
+          </p>
+        </div>
+      </section>
+
+      {/* Platform Overview */}
+      <section style={{ 
+        padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
+        background: '#DBDBDB' 
+      }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <h2 style={{ 
+            fontSize: 'clamp(2rem, 4vw, 2.5rem)', 
+            fontWeight: 900, 
+            marginBottom: '1.5rem', 
             color: '#000',
+            letterSpacing: '-0.02em',
+            textAlign: 'center'
+          }}>
+            Platform Architecture
+          </h2>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#333',
+            fontWeight: 600,
+            marginBottom: '3rem',
+            textAlign: 'center'
+          }}>
+            Dominion operates in three tiers. Each tier builds on the foundation established by the one before it.
+          </p>
+          
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+            {/* Tier 1 */}
+            <div style={{
+              background: '#e8e8e8',
+              padding: 'clamp(2rem, 4vw, 2.5rem)',
+              borderRadius: '4px',
+              borderLeft: '4px solid #000'
+            }}>
+              <h3 style={{
+                fontSize: 'clamp(1.3rem, 3vw, 1.5rem)',
+                fontWeight: 900,
+                color: '#000',
+                marginBottom: '1rem'
+              }}>
+                Tier 1: Environment Governance
+              </h3>
+              <p style={{
+                fontSize: 'clamp(1rem, 2vw, 1.15rem)',
+                lineHeight: 1.8,
+                color: '#333',
+                fontWeight: 600,
+                marginBottom: '1rem'
+              }}>
+                Establishes the boundaries of the firm's digital estate. Defines which systems are authorized, which identities can act, where data is permitted to reside, and which integrations are allowed.
+              </p>
+              <p style={{
+                fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)',
+                color: '#666',
+                fontWeight: 600,
+                fontStyle: 'italic'
+              }}>
+                Every engagement begins here. This is the foundation.
+              </p>
+            </div>
+            
+            {/* Tier 2 */}
+            <div style={{
+              background: '#e8e8e8',
+              padding: 'clamp(2rem, 4vw, 2.5rem)',
+              borderRadius: '4px',
+              borderLeft: '4px solid #000'
+            }}>
+              <h3 style={{
+                fontSize: 'clamp(1.3rem, 3vw, 1.5rem)',
+                fontWeight: 900,
+                color: '#000',
+                marginBottom: '1rem'
+              }}>
+                Tier 2: Workflow Governance
+              </h3>
+              <p style={{
+                fontSize: 'clamp(1rem, 2vw, 1.15rem)',
+                lineHeight: 1.8,
+                color: '#333',
+                fontWeight: 600,
+                marginBottom: '1rem'
+              }}>
+                Binds authority to execution across billing, documents, and matter flow. Ensures that legally consequential actions are recorded with the identity of the approver at the moment execution occurs.
+              </p>
+              <p style={{
+                fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)',
+                color: '#666',
+                fontWeight: 600,
+                fontStyle: 'italic'
+              }}>
+                This is where Reconstruction Tax gets eliminated.
+              </p>
+            </div>
+            
+            {/* Tier 3 */}
+            <div style={{
+              background: '#e8e8e8',
+              padding: 'clamp(2rem, 4vw, 2.5rem)',
+              borderRadius: '4px',
+              borderLeft: '4px solid #000'
+            }}>
+              <h3 style={{
+                fontSize: 'clamp(1.3rem, 3vw, 1.5rem)',
+                fontWeight: 900,
+                color: '#000',
+                marginBottom: '1rem'
+              }}>
+                Tier 3: Intelligence Layer
+              </h3>
+              <p style={{
+                fontSize: 'clamp(1rem, 2vw, 1.15rem)',
+                lineHeight: 1.8,
+                color: '#333',
+                fontWeight: 600,
+                marginBottom: '1rem'
+              }}>
+                Provides knowledge access and drafting assistance using only approved and final firm artifacts. Operates entirely within the governed environment with no external data exposure.
+              </p>
+              <p style={{
+                fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)',
+                color: '#666',
+                fontWeight: 600,
+                fontStyle: 'italic'
+              }}>
+                Optional. Available only after Tier 1 and Tier 2 are in place.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section style={{ 
+        padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
+        background: '#000000',
+        position: 'relative'
+      }}>
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          opacity: 0.04,
+          backgroundImage: 'repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)',
+          backgroundSize: '12px 12px'
+        }} />
+        
+        <div style={{ maxWidth: '900px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
+          <h2 style={{ 
+            fontSize: 'clamp(2rem, 4vw, 2.5rem)', 
+            fontWeight: 900, 
+            marginBottom: '1.5rem', 
+            color: '#DBDBDB',
+            letterSpacing: '-0.02em',
+            textAlign: 'center'
+          }}>
+            How Authority Capture Works
+          </h2>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#b0b0b0',
+            fontWeight: 600,
+            marginBottom: '2.5rem',
+            textAlign: 'center'
+          }}>
+            When a scope change, billing adjustment, or other consequential action requires approval, Dominion captures authority in real time.
+          </p>
+          
+          {/* Approval Request Demo SVG */}
+          <div style={{
+            background: '#f3f4f6',
+            borderRadius: '8px',
+            padding: '1rem',
+            marginBottom: '2rem'
+          }}>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" style={{ width: '100%', height: 'auto', display: 'block' }}>
+              <defs>
+                <filter id="approvalShadow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feDropShadow dx="0" dy="2" stdDeviation="8" floodColor="#000" floodOpacity="0.06"/>
+                </filter>
+              </defs>
+              <rect width="900" height="600" fill="#f3f4f6"/>
+              <rect x="50" y="35" width="800" height="530" rx="10" fill="#fff" filter="url(#approvalShadow)"/>
+              <text x="450" y="90" fontFamily="system-ui, -apple-system, sans-serif" fontSize="24" fontWeight="500" fill="#1a1a2e" textAnchor="middle">Approval Request — Matter 21-1047</text>
+              <text x="450" y="118" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fill="#6b7280" textAnchor="middle">Scope or Cost Change</text>
+              <line x1="90" y1="145" x2="810" y2="145" stroke="#e5e7eb" strokeWidth="1"/>
+              <text x="90" y="185" fontFamily="system-ui, -apple-system, sans-serif" fontSize="16" fontWeight="600" fill="#374151">Decision Summary</text>
+              <text x="90" y="225" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fill="#6b7280">Matter:</text>
+              <text x="175" y="225" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fill="#1f2937">Johnson Estate</text>
+              <text x="90" y="255" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fill="#6b7280">Change Type:</text>
+              <text x="190" y="255" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fill="#1f2937">Discovery Expansion</text>
+              <text x="90" y="285" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fill="#6b7280">Reason:</text>
+              <text x="155" y="285" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fill="#1f2937">Additional custodians identified</text>
+              <text x="90" y="315" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fill="#6b7280">Estimated Impact:</text>
+              <text x="215" y="315" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fill="#1f2937">+18–24 hours</text>
+              <text x="90" y="345" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fill="#6b7280">Fee Range:</text>
+              <text x="175" y="345" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fill="#1f2937">$8,500–$11,000</text>
+              <text x="90" y="420" fontFamily="system-ui, -apple-system, sans-serif" fontSize="13" fill="#9ca3af" fontStyle="italic">Approval recorded with verified identity and timestamp</text>
+              <line x1="430" y1="165" x2="430" y2="380" stroke="#e5e7eb" strokeWidth="1"/>
+              <text x="460" y="185" fontFamily="system-ui, -apple-system, sans-serif" fontSize="16" fontWeight="600" fill="#374151">Approval</text>
+              <text x="460" y="225" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fill="#6b7280">Requested by:</text>
+              <text x="565" y="225" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fontWeight="500" fill="#1f2937">Maria Lopez</text>
+              <text x="660" y="225" fontFamily="system-ui, -apple-system, sans-serif" fontSize="13" fill="#9ca3af">(Paralegal)</text>
+              <text x="460" y="255" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fill="#6b7280">Approver:</text>
+              <text x="540" y="255" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fontWeight="500" fill="#1f2937">Daniel Wright</text>
+              <text x="648" y="255" fontFamily="system-ui, -apple-system, sans-serif" fontSize="13" fill="#9ca3af">(Partner)</text>
+              <text x="460" y="285" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fill="#6b7280">Authority Role:</text>
+              <text x="565" y="285" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fill="#1f2937">Lead Matter Partner</text>
+              <rect x="460" y="310" width="18" height="18" rx="3" fill="#1e3a5f"/>
+              <path d="M464 319 L468 323 L474 315" stroke="#fff" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+              <text x="488" y="324" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fill="#374151">I acknowledge the scope and cost impact</text>
+              <rect x="460" y="350" width="95" height="38" rx="5" fill="#fff" stroke="#1e3a5f" strokeWidth="1.5"/>
+              <text x="507" y="374" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fontWeight="500" fill="#1e3a5f" textAnchor="middle">Approve</text>
+              <rect x="570" y="350" width="95" height="38" rx="5" fill="#fff" stroke="#d1d5db" strokeWidth="1.5"/>
+              <text x="617" y="374" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fontWeight="500" fill="#6b7280" textAnchor="middle">Reject</text>
+              <rect x="670" y="400" width="180" height="155" rx="5" fill="#f8fafc" stroke="#e2e8f0" strokeWidth="1"/>
+              <text x="760" y="425" fontFamily="system-ui, -apple-system, sans-serif" fontSize="12" fontWeight="600" fill="#1e293b" textAnchor="middle">Authority Record Created</text>
+              <text x="685" y="450" fontFamily="system-ui, -apple-system, sans-serif" fontSize="11" fill="#64748b">Authorization ID:</text>
+              <text x="700" y="466" fontFamily="system-ui, -apple-system, sans-serif" fontSize="11" fill="#334155">AUTH-2025-0142</text>
+              <text x="685" y="488" fontFamily="system-ui, -apple-system, sans-serif" fontSize="11" fill="#64748b">Timestamp:</text>
+              <text x="700" y="504" fontFamily="system-ui, -apple-system, sans-serif" fontSize="11" fill="#334155">2025-01-12 14:07 UTC</text>
+              <text x="685" y="526" fontFamily="system-ui, -apple-system, sans-serif" fontSize="11" fill="#64748b">Record:</text>
+              <text x="700" y="542" fontFamily="system-ui, -apple-system, sans-serif" fontSize="11" fill="#334155">Immutable and exportable</text>
+            </svg>
+          </div>
+          
+          <div style={{
+            background: 'rgba(219, 219, 219, 0.1)',
+            padding: 'clamp(1.5rem, 3vw, 2rem)',
+            borderRadius: '4px',
+            borderLeft: '4px solid #DBDBDB'
+          }}>
+            <h3 style={{
+              fontSize: 'clamp(1.2rem, 2.5vw, 1.4rem)',
+              fontWeight: 900,
+              color: '#DBDBDB',
+              marginBottom: '1.25rem'
+            }}>
+              The Approval Flow
+            </h3>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              <p style={{
+                fontSize: 'clamp(1rem, 2vw, 1.1rem)',
+                lineHeight: 1.7,
+                color: '#b0b0b0',
+                fontWeight: 600
+              }}>
+                <strong style={{ color: '#fff' }}>1.</strong> Action requiring authority is initiated (scope change, billing adjustment, etc.)
+              </p>
+              <p style={{
+                fontSize: 'clamp(1rem, 2vw, 1.1rem)',
+                lineHeight: 1.7,
+                color: '#b0b0b0',
+                fontWeight: 600
+              }}>
+                <strong style={{ color: '#fff' }}>2.</strong> Designated approver receives notification with full context
+              </p>
+              <p style={{
+                fontSize: 'clamp(1rem, 2vw, 1.1rem)',
+                lineHeight: 1.7,
+                color: '#b0b0b0',
+                fontWeight: 600
+              }}>
+                <strong style={{ color: '#fff' }}>3.</strong> Approver reviews scope and cost impact, approves or declines
+              </p>
+              <p style={{
+                fontSize: 'clamp(1rem, 2vw, 1.1rem)',
+                lineHeight: 1.7,
+                color: '#b0b0b0',
+                fontWeight: 600
+              }}>
+                <strong style={{ color: '#fff' }}>4.</strong> Authority record is created with verified identity, timestamp, and decision
+              </p>
+              <p style={{
+                fontSize: 'clamp(1rem, 2vw, 1.1rem)',
+                lineHeight: 1.7,
+                color: '#fff',
+                fontWeight: 700
+              }}>
+                <strong>5.</strong> Record is immutable and exportable. Available instantly at billing review.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Before/After Diagram */}
+      <section style={{ 
+        padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
+        background: '#DBDBDB' 
+      }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <h2 style={{ 
+            fontSize: 'clamp(2rem, 4vw, 2.5rem)', 
+            fontWeight: 900, 
+            marginBottom: '1.5rem', 
+            color: '#000',
+            letterSpacing: '-0.02em',
+            textAlign: 'center'
+          }}>
+            The Outcome Difference
+          </h2>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#333',
+            fontWeight: 600,
+            marginBottom: '2.5rem',
+            textAlign: 'center',
+            maxWidth: '800px',
+            margin: '0 auto 2.5rem'
+          }}>
+            The same scope change. Two different outcomes. The only variable is whether authority was captured at execution time.
+          </p>
+          
+          <div style={{
+            background: '#DBDBDB',
+            borderRadius: '8px',
+            overflow: 'hidden'
+          }}>
+            <svg width="100%" viewBox="0 0 1800 1400" xmlns="http://www.w3.org/2000/svg" style={{ display: 'block' }}>
+              <defs>
+                <linearGradient id="gradLeftBox2b" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stopColor="#F8B461" stopOpacity="1" />
+                  <stop offset="100%" stopColor="#E89A47" stopOpacity="1" />
+                </linearGradient>
+                <linearGradient id="gradLeftBox3b" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stopColor="#E85D47" stopOpacity="1" />
+                  <stop offset="100%" stopColor="#D63C2F" stopOpacity="1" />
+                </linearGradient>
+                <linearGradient id="gradLeftBox4b" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stopColor="#C0392B" stopOpacity="1" />
+                  <stop offset="100%" stopColor="#8B0000" stopOpacity="1" />
+                </linearGradient>
+                <linearGradient id="gradLeftBox5b" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stopColor="#8B0000" stopOpacity="1" />
+                  <stop offset="100%" stopColor="#5C0000" stopOpacity="1" />
+                </linearGradient>
+                <linearGradient id="gradRightBox2b" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stopColor="#B8E4C8" stopOpacity="1" />
+                  <stop offset="100%" stopColor="#95D5A8" stopOpacity="1" />
+                </linearGradient>
+                <linearGradient id="gradRightBox3b" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stopColor="#52B788" stopOpacity="1" />
+                  <stop offset="100%" stopColor="#3D9E71" stopOpacity="1" />
+                </linearGradient>
+                <linearGradient id="gradRightBox4b" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stopColor="#2D6A4F" stopOpacity="1" />
+                  <stop offset="100%" stopColor="#1F4D37" stopOpacity="1" />
+                </linearGradient>
+                <linearGradient id="gradRightBox5b" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stopColor="#1B4332" stopOpacity="1" />
+                  <stop offset="100%" stopColor="#0B3620" stopOpacity="1" />
+                </linearGradient>
+                <filter id="shadowb" x="-50%" y="-50%" width="200%" height="200%">
+                  <feDropShadow dx="0" dy="4" stdDeviation="6" floodOpacity="0.25" floodColor="#000000"/>
+                </filter>
+              </defs>
+              <rect width="1800" height="1400" fill="#dbdbdb"/>
+              <text x="400" y="55" textAnchor="middle" fontSize="26" fontWeight="700" fill="#000000">Before Dominion</text>
+              <text x="400" y="85" textAnchor="middle" fontSize="16" fontWeight="400" fill="#000000">(Status Quo)</text>
+              <text x="1400" y="55" textAnchor="middle" fontSize="26" fontWeight="700" fill="#000000">After Dominion</text>
+              <text x="1400" y="85" textAnchor="middle" fontSize="16" fontWeight="400" fill="#000000">(With Authority Capture)</text>
+              <line x1="900" y1="120" x2="900" y2="1250" stroke="#B8B8B8" strokeWidth="1" strokeDasharray="8,8"/>
+              <rect x="80" y="130" width="640" height="100" rx="8" ry="8" fill="#F5F5F5" stroke="#DCDCDC" strokeWidth="1" filter="url(#shadowb)"/>
+              <text x="400" y="165" textAnchor="middle" fontSize="18" fontWeight="700" fill="#000000">Scope Change Occurs</text>
+              <text x="400" y="195" textAnchor="middle" fontSize="14" fontWeight="600" fill="#000000">Additional custodians identified, discovery expands</text>
+              <line x1="400" y1="230" x2="400" y2="255" stroke="#999999" strokeWidth="2"/>
+              <polygon points="400,265 395,255 405,255" fill="#999999"/>
+              <text x="400" y="295" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">No formal capture</text>
+              <rect x="80" y="305" width="640" height="170" rx="8" ry="8" fill="url(#gradLeftBox2b)" filter="url(#shadowb)"/>
+              <text x="400" y="360" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Work Proceeds Without Authority Record</text>
+              <text x="400" y="390" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Paralegal records time. Associates bill hours.</text>
+              <text x="400" y="412" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Partners approve informally via in-person conversations,</text>
+              <text x="400" y="434" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Teams, or email. No formal record exists.</text>
+              <line x1="400" y1="475" x2="400" y2="500" stroke="#E89A47" strokeWidth="2"/>
+              <polygon points="400,510 395,500 405,500" fill="#E89A47"/>
+              <text x="400" y="540" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Months pass</text>
+              <rect x="80" y="560" width="640" height="170" rx="8" ry="8" fill="url(#gradLeftBox3b)" filter="url(#shadowb)"/>
+              <text x="400" y="600" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Billing Review Questions Charges</text>
+              <text x="400" y="635" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Partner cannot prove scope was approved.</text>
+              <text x="400" y="657" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Charges are indefensible.</text>
+              <text x="400" y="690" textAnchor="middle" fontSize="19" fontWeight="700" fill="#FFD166">Over $250,000 written down</text>
+              <line x1="400" y1="730" x2="400" y2="755" stroke="#D63C2F" strokeWidth="2"/>
+              <polygon points="400,765 395,755 405,755" fill="#D63C2F"/>
+              <text x="400" y="805" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Escalation</text>
+              <rect x="80" y="825" width="640" height="170" rx="8" ry="8" fill="url(#gradLeftBox4b)" filter="url(#shadowb)"/>
+              <text x="400" y="860" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Senior Attorney Reconstructs Approval</text>
+              <text x="400" y="895" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">15+ hours searching emails, chats, files</text>
+              <text x="400" y="917" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">trying to establish decision trail.</text>
+              <text x="400" y="950" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">No proof exists.</text>
+              <line x1="400" y1="995" x2="400" y2="1020" stroke="#8B0000" strokeWidth="2"/>
+              <polygon points="400,1030 395,1020 405,1020" fill="#8B0000"/>
+              <text x="400" y="1070" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Revenue loss</text>
+              <rect x="80" y="1090" width="640" height="170" rx="8" ry="8" fill="url(#gradLeftBox5b)" filter="url(#shadowb)"/>
+              <text x="400" y="1120" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Reconstruction Tax Paid</text>
+              <text x="400" y="1160" textAnchor="middle" fontSize="24" fontWeight="700" fill="#FFD166">Over $1.5 million annually</text>
+              <text x="400" y="1200" textAnchor="middle" fontSize="13" fontWeight="600" fill="#FFFFFF">Conservative floor for mid-sized firm</text>
+              <text x="400" y="1228" textAnchor="middle" fontSize="12" fontWeight="500" fill="#FFFFFF">Authority-driven losses accumulate invisibly</text>
+              <rect x="1080" y="130" width="640" height="100" rx="8" ry="8" fill="#F5F5F5" stroke="#DCDCDC" strokeWidth="1" filter="url(#shadowb)"/>
+              <text x="1400" y="165" textAnchor="middle" fontSize="18" fontWeight="700" fill="#000000">Scope Change Occurs</text>
+              <text x="1400" y="195" textAnchor="middle" fontSize="14" fontWeight="600" fill="#000000">Additional custodians identified, discovery expands</text>
+              <line x1="1400" y1="230" x2="1400" y2="255" stroke="#52B788" strokeWidth="2"/>
+              <polygon points="1400,265 1395,255 1405,255" fill="#52B788"/>
+              <text x="1400" y="295" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Authority requested</text>
+              <rect x="1080" y="305" width="640" height="190" rx="8" ry="8" fill="url(#gradRightBox2b)" filter="url(#shadowb)"/>
+              <text x="1400" y="340" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Approval Captured in Real Time ✓</text>
+              <text x="1400" y="370" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Approver is notified approval is needed.</text>
+              <text x="1400" y="392" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Approver clicks approval link. Reviews scope and cost.</text>
+              <text x="1400" y="414" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Approves or declines in 20 seconds.</text>
+              <text x="1400" y="450" textAnchor="middle" fontSize="13" fontWeight="700" fill="#FFFFFF">AUTH-2025-00142 generated</text>
+              <line x1="1400" y1="495" x2="1400" y2="520" stroke="#52B788" strokeWidth="2"/>
+              <polygon points="1400,530 1395,520 1405,520" fill="#52B788"/>
+              <text x="1400" y="565" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Record exists</text>
+              <rect x="1080" y="590" width="640" height="170" rx="8" ry="8" fill="url(#gradRightBox3b)" filter="url(#shadowb)"/>
+              <text x="1400" y="620" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Billing Review Pulls Authority Record</text>
+              <text x="1400" y="655" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Partner pulls AUTH-2025-00142 instantly.</text>
+              <text x="1400" y="677" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Complete approval packet available: who, when, what.</text>
+              <text x="1400" y="715" textAnchor="middle" fontSize="14" fontWeight="700" fill="#FFFFFF">Defensibility is certain.</text>
+              <line x1="1400" y1="760" x2="1400" y2="785" stroke="#3D9E71" strokeWidth="2"/>
+              <polygon points="1400,795 1395,785 1405,785" fill="#3D9E71"/>
+              <text x="1400" y="830" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Zero reconstruction</text>
+              <rect x="1080" y="855" width="640" height="170" rx="8" ry="8" fill="url(#gradRightBox4b)" filter="url(#shadowb)"/>
+              <text x="1400" y="885" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Zero Reconstruction Labor</text>
+              <text x="1400" y="920" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">No searching. No email mining. No uncertainty.</text>
+              <text x="1400" y="942" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Authority is immutable and exportable.</text>
+              <text x="1400" y="975" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Senior time stays on revenue work.</text>
+              <line x1="1400" y1="1025" x2="1400" y2="1050" stroke="#1F4D37" strokeWidth="2"/>
+              <polygon points="1400,1060 1395,1050 1405,1050" fill="#1F4D37"/>
+              <text x="1400" y="1100" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Revenue protected</text>
+              <rect x="1080" y="1130" width="640" height="170" rx="8" ry="8" fill="url(#gradRightBox5b)" filter="url(#shadowb)"/>
+              <text x="1400" y="1160" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Reconstruction Tax Eliminated</text>
+              <text x="1400" y="1205" textAnchor="middle" fontSize="24" fontWeight="700" fill="#B7E4C7">$280,000–$320,000 recovered annually</text>
+              <text x="1400" y="1245" textAnchor="middle" fontSize="13" fontWeight="600" fill="#FFFFFF">Realistic recovery from authority-driven gaps</text>
+              <text x="1400" y="1273" textAnchor="middle" fontSize="12" fontWeight="500" fill="#FFFFFF">Revenue and capacity protected going forward</text>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      {/* How Dominion Deploys */}
+      <section style={{ 
+        padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
+        background: 'linear-gradient(135deg, #c8c8c8 0%, #DBDBDB 100%)' 
+      }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <h2 style={{ 
+            fontSize: 'clamp(2rem, 4vw, 2.5rem)', 
+            fontWeight: 900, 
+            marginBottom: '1.5rem', 
+            color: '#000',
+            letterSpacing: '-0.02em',
+            textAlign: 'center'
+          }}>
+            How Dominion Deploys
+          </h2>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#333',
+            fontWeight: 600,
+            marginBottom: '2.5rem',
+            textAlign: 'center'
+          }}>
+            Dominion operates as infrastructure within your existing cloud environment. No new systems to learn. No workflow disruption.
+          </p>
+          
+          {/* Top row - 3 items */}
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: 'repeat(3, 1fr)',
+            gap: '1.5rem',
+            marginBottom: '1.5rem'
+          }}>
+            {[
+              {
+                title: 'Identity Binding',
+                description: 'Every authority action is tied to a verified individual. No anonymous approvals. No shared credentials.'
+              },
+              {
+                title: 'Controlled Execution',
+                description: 'Consequential actions occur only from authorized access points within the governed environment.'
+              },
+              {
+                title: 'Automated Routing',
+                description: 'Approval requests flow to the right authority. Notifications trigger automatically. Records generate on execution.'
+              }
+            ].map((item, i) => (
+              <div key={i} style={{
+                background: '#e8e8e8',
+                padding: 'clamp(1.5rem, 3vw, 2rem)',
+                borderRadius: '4px',
+                border: '1px solid #c8c8c8'
+              }}>
+                <h3 style={{ 
+                  fontSize: 'clamp(1.1rem, 2.5vw, 1.25rem)', 
+                  fontWeight: 900, 
+                  marginBottom: '0.75rem', 
+                  color: '#000'
+                }}>{item.title}</h3>
+                <p style={{ 
+                  color: '#333', 
+                  lineHeight: 1.7,
+                  fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)',
+                  fontWeight: 600
+                }}>{item.description}</p>
+              </div>
+            ))}
+          </div>
+          
+          {/* Bottom row - 1 centered item */}
+          <div style={{ 
+            display: 'flex',
+            justifyContent: 'center'
+          }}>
+            <div style={{
+              background: '#e8e8e8',
+              padding: 'clamp(1.5rem, 3vw, 2rem)',
+              borderRadius: '4px',
+              border: '1px solid #c8c8c8',
+              width: 'calc(33.333% - 1rem)',
+              minWidth: '250px'
+            }}>
+              <h3 style={{ 
+                fontSize: 'clamp(1.1rem, 2.5vw, 1.25rem)', 
+                fontWeight: 900, 
+                marginBottom: '0.75rem', 
+                color: '#000'
+              }}>Governance Visibility</h3>
+              <p style={{ 
+                color: '#333', 
+                lineHeight: 1.7,
+                fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)',
+                fontWeight: 600
+              }}>Leadership maintains oversight across the firm. Authority gaps surface before they become write-downs.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section style={{ 
+        padding: 'clamp(5rem, 10vw, 8rem) clamp(1.5rem, 5vw, 2.5rem)', 
+        background: '#DBDBDB' 
+      }}>
+        <div style={{ maxWidth: '700px', margin: '0 auto' }}>
+          <div style={{
+            background: 'linear-gradient(180deg, #000000 0%, #061018 100%)',
+            borderRadius: '16px',
+            padding: 'clamp(3rem, 6vw, 4.5rem) clamp(2rem, 5vw, 3.5rem)',
+            textAlign: 'center',
+            boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
+            position: 'relative',
+            overflow: 'hidden'
+          }}>
+            <div style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              opacity: 0.02,
+              backgroundImage: 'repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)',
+              backgroundSize: '20px 20px'
+            }} />
+            <div style={{ position: 'relative', zIndex: 1 }}>
+              <h2 style={{ 
+                fontSize: 'clamp(1.75rem, 4vw, 2.25rem)', 
+                fontWeight: 900, 
+                marginBottom: '1.25rem',
+                letterSpacing: '-0.02em',
+                color: '#fff'
+              }}>
+                See Dominion in Action
+              </h2>
+              <p style={{ 
+                fontSize: 'clamp(1rem, 2vw, 1.15rem)', 
+                marginBottom: 'clamp(2rem, 4vw, 2.5rem)', 
+                color: '#b0b0b0',
+                lineHeight: 1.6,
+                fontWeight: 500
+              }}>
+                Schedule a governance examination to determine if Dominion is right for your firm
+              </p>
+              <a 
+                href="https://calendly.com/jfreeman-yavardi/yavardi-governance-examination"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-block',
+                  background: '#DBDBDB',
+                  color: '#000',
+                  padding: 'clamp(0.875rem, 2vw, 1rem) clamp(2rem, 4vw, 2.5rem)',
+                  borderRadius: '6px',
+                  textDecoration: 'none',
+                  fontWeight: 700,
+                  fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)',
+                  transition: 'all 0.2s ease',
+                  border: 'none',
+                  cursor: 'pointer'
+                }}
+              >
+                Schedule Governance Examination
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+
+  const CaseRecordsPage = () => (
+    <>
+      {/* Hero */}
+      <section style={{
+        minHeight: '40vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background: '#000000',
+        position: 'relative',
+        overflow: 'hidden',
+        padding: 'clamp(5rem, 8vw, 6rem) 1.5rem clamp(2.5rem, 4vw, 3.5rem)'
+      }}>
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          opacity: 0.04,
+          backgroundImage: 'repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)',
+          backgroundSize: '12px 12px'
+        }} />
+        
+        <div style={{ 
+          maxWidth: '900px', 
+          margin: '0 auto', 
+          textAlign: 'center', 
+          position: 'relative', 
+          zIndex: 1
+        }}>
+          <h1 style={{ 
+            fontSize: 'clamp(2.5rem, 6vw, 3.5rem)', 
+            fontWeight: 900, 
+            marginBottom: '2rem', 
+            color: '#FFFFFF',
             lineHeight: 1.2,
             letterSpacing: '-0.02em'
           }}>
@@ -1005,7 +2011,7 @@ export default function YavardiWebsite() {
           <p style={{
             fontSize: 'clamp(1.1rem, 2.5vw, 1.35rem)',
             lineHeight: 1.7,
-            color: '#333',
+            color: 'rgba(255, 255, 255, 0.8)',
             fontWeight: 600,
             maxWidth: '750px',
             margin: '0 auto'
@@ -1066,7 +2072,7 @@ export default function YavardiWebsite() {
               rel="noopener noreferrer"
               style={{
                 display: 'inline-block',
-                background: '#0a1628',
+                background: '#000000',
                 color: '#fff',
                 padding: 'clamp(0.875rem, 2vw, 1rem) clamp(1.75rem, 4vw, 2.5rem)',
                 borderRadius: '3px',
@@ -1135,7 +2141,7 @@ export default function YavardiWebsite() {
               rel="noopener noreferrer"
               style={{
                 display: 'inline-block',
-                background: '#0a1628',
+                background: '#000000',
                 color: '#fff',
                 padding: 'clamp(0.875rem, 2vw, 1rem) clamp(1.75rem, 4vw, 2.5rem)',
                 borderRadius: '3px',
@@ -1161,7 +2167,7 @@ export default function YavardiWebsite() {
       }}>
         <div style={{ maxWidth: '700px', margin: '0 auto' }}>
           <div style={{
-            background: 'linear-gradient(180deg, #0a1628 0%, #061018 100%)',
+            background: 'linear-gradient(180deg, #000000 0%, #061018 100%)',
             borderRadius: '16px',
             padding: 'clamp(3rem, 6vw, 4.5rem) clamp(2rem, 5vw, 3.5rem)',
             textAlign: 'center',
@@ -1247,7 +2253,7 @@ export default function YavardiWebsite() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'linear-gradient(135deg, #dbdbdb 0%, #e8e8e8 100%)',
+          background: '#000000',
           position: 'relative',
           overflow: 'hidden',
           padding: 'clamp(5rem, 8vw, 6rem) 1.5rem clamp(2.5rem, 4vw, 3.5rem)'
@@ -1259,7 +2265,7 @@ export default function YavardiWebsite() {
             right: 0,
             bottom: 0,
             opacity: 0.04,
-            backgroundImage: 'repeating-linear-gradient(45deg, #000 0, #000 1px, transparent 0, transparent 50%)',
+            backgroundImage: 'repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)',
             backgroundSize: '12px 12px'
           }} />
           
@@ -1274,7 +2280,7 @@ export default function YavardiWebsite() {
               fontSize: 'clamp(2.5rem, 6vw, 3.5rem)', 
               fontWeight: 900, 
               marginBottom: '2rem', 
-              color: '#000',
+              color: '#FFFFFF',
               lineHeight: 1.2,
               letterSpacing: '-0.02em'
             }}>
@@ -1284,7 +2290,7 @@ export default function YavardiWebsite() {
             <p style={{
               fontSize: 'clamp(1.1rem, 2.5vw, 1.35rem)',
               lineHeight: 1.7,
-              color: '#333',
+              color: 'rgba(255, 255, 255, 0.8)',
               fontWeight: 600,
               maxWidth: '750px',
               margin: '0 auto'
@@ -1402,7 +2408,7 @@ export default function YavardiWebsite() {
                 type="submit"
                 style={{
                   width: '100%',
-                  background: '#0a1628',
+                  background: '#000000',
                   color: '#fff',
                   padding: '1rem 2rem',
                   borderRadius: '4px',
@@ -1426,7 +2432,7 @@ export default function YavardiWebsite() {
                 style={{ 
                   fontSize: '1.2rem', 
                   fontWeight: 700, 
-                  color: '#0a1628',
+                  color: '#000000',
                   textDecoration: 'none'
                 }}
               >
@@ -1502,6 +2508,20 @@ export default function YavardiWebsite() {
               Services
             </a>
             <a 
+              onClick={() => navigateTo('dominion')}
+              style={{ 
+                color: '#000', 
+                textDecoration: 'none', 
+                fontWeight: 500, 
+                fontSize: '1.05rem',
+                transition: 'opacity 0.2s',
+                opacity: currentPage === 'dominion' ? 1 : 0.8,
+                cursor: 'pointer'
+              }}
+            >
+              Dominion
+            </a>
+            <a 
               onClick={() => navigateTo('case-records')}
               style={{ 
                 color: '#000', 
@@ -1518,7 +2538,7 @@ export default function YavardiWebsite() {
             <a 
               onClick={() => navigateTo('contact')}
               style={{ 
-                background: '#0a1628', 
+                background: '#000000', 
                 color: '#fff', 
                 padding: '0.75rem 1.75rem', 
                 borderRadius: '3px', 
@@ -1584,6 +2604,17 @@ export default function YavardiWebsite() {
               Services
             </a>
             <a 
+              onClick={() => navigateTo('dominion')}
+              style={{ 
+                color: '#000', 
+                textDecoration: 'none', 
+                fontWeight: 500,
+                cursor: 'pointer'
+              }}
+            >
+              Dominion
+            </a>
+            <a 
               onClick={() => navigateTo('case-records')}
               style={{ 
                 color: '#000', 
@@ -1597,7 +2628,7 @@ export default function YavardiWebsite() {
             <a 
               onClick={() => navigateTo('contact')}
               style={{ 
-                background: '#0a1628', 
+                background: '#000000', 
                 color: '#fff', 
                 padding: '0.75rem 1.75rem', 
                 borderRadius: '3px', 
@@ -1618,6 +2649,7 @@ export default function YavardiWebsite() {
       <main>
         {currentPage === 'home' && <HomePage />}
         {currentPage === 'services' && <ServicesPage />}
+        {currentPage === 'dominion' && <DominionPage />}
         {currentPage === 'case-records' && <CaseRecordsPage />}
         {currentPage === 'contact' && <ContactPage />}
       </main>
