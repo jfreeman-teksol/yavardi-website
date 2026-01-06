@@ -56,7 +56,7 @@ export default function YavardiWebsite() {
   // Page Components
   const HomePage = () => (
     <>
-      {/* Hero Section - NEW */}
+      {/* Hero Section */}
       <section style={{
         minHeight: '100vh',
         display: 'flex',
@@ -67,7 +67,7 @@ export default function YavardiWebsite() {
         overflow: 'hidden',
         paddingTop: '70px'
       }}>
-        {/* Top portion - BLUE with lines */}
+        {/* Top portion - BLACK with lines */}
         <div style={{
           position: 'relative',
           width: '100%',
@@ -95,26 +95,35 @@ export default function YavardiWebsite() {
             position: 'relative', 
             zIndex: 1
           }}>
-            <h1 style={{ 
-              fontSize: 'clamp(1.85rem, 4.5vw, 2.5rem)', 
+            <p style={{ 
+              fontSize: 'clamp(1.1rem, 2vw, 1.35rem)', 
               fontWeight: 900, 
-              marginBottom: '2.5rem', 
+              marginBottom: '1.5rem', 
               color: '#FFFFFF',
-              lineHeight: 1.3,
-              letterSpacing: '-0.01em'
+              lineHeight: 1.7
             }}>
-              Your firm executes over $10 million in billable work every year.
-            </h1>
+              If the chain of custody breaks on a physical exhibit, the case fails.
+            </p>
             
-            <p style={{
+            <p style={{ 
+              fontSize: 'clamp(1.1rem, 2vw, 1.35rem)', 
+              fontWeight: 600, 
+              marginBottom: '2.5rem', 
+              color: 'rgba(255, 255, 255, 0.8)',
+              lineHeight: 1.7
+            }}>
+              Digital legal work produces the same legal and financial consequences, yet authority is rarely preserved with the same evidentiary discipline.
+            </p>
+            
+            <h1 style={{
               fontSize: 'clamp(1.35rem, 3vw, 1.85rem)',
               fontWeight: 900,
               color: '#FFFFFF',
               marginBottom: '0',
               letterSpacing: '-0.01em'
             }}>
-              How much of that work has digital proof of who authorized it?
-            </p>
+              How much of your firm's work has preserved proof of who authorized it?
+            </h1>
           </div>
         </div>
         
@@ -144,41 +153,29 @@ export default function YavardiWebsite() {
               maxWidth: '900px',
               margin: '0 auto 2.5rem'
             }}>
-              <p style={{ marginBottom: '1.5rem' }}>
-                When authorization isn't captured in real-time, billing review becomes exposure management.
-              </p>
-              <p style={{ marginBottom: '1.5rem' }}>
-                Partners write down defensible work because they can't prove approval. Senior attorneys burn billable hours reconstructing old decisions. Disputes escalate because authority records don't exist.
-              </p>
+              <p style={{ marginBottom: '0.75rem' }}>Approved work leaves no trace of who approved it.</p>
+              <p style={{ marginBottom: '0.75rem' }}>Senior attorneys spend billable hours reconstructing decisions.</p>
+              <p style={{ marginBottom: '0.75rem' }}>Write-downs absorb disputes that records would have prevented.</p>
+              <p style={{ marginBottom: '0' }}>Scope creep goes unchallenged because authorization was never captured.</p>
             </div>
             
             <p style={{
               fontSize: 'clamp(1.5rem, 3.5vw, 2rem)',
               fontWeight: 900,
               color: '#000',
-              marginBottom: '1.5rem',
+              marginBottom: '3rem',
               letterSpacing: '-0.01em'
             }}>
-              This is your Reconstruction Tax.
+              This is the Reconstruction Tax.
             </p>
             
             <p style={{
               fontSize: 'clamp(1.1rem, 2vw, 1.35rem)',
-              fontWeight: 600,
-              color: '#333',
+              fontWeight: 700,
+              color: '#000',
               marginBottom: '3rem'
             }}>
-              For a 35-attorney litigation practice, it costs over $1.5 million annually.
-            </p>
-            
-            <p style={{
-              fontSize: 'clamp(1.35rem, 3vw, 1.85rem)',
-              fontWeight: 900,
-              color: '#000',
-              marginBottom: '3rem',
-              letterSpacing: '-0.01em'
-            }}>
-              Yavardi closes the gap that causes it.
+              Governance stops that tax from accruing.
             </p>
             
             <a 
@@ -197,18 +194,26 @@ export default function YavardiWebsite() {
                 transition: 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)',
                 boxShadow: '0 4px 12px rgba(30, 58, 138, 0.15)',
                 border: 'none',
-                cursor: 'pointer'
+                cursor: 'pointer',
+                marginBottom: '1rem'
               }}
             >
-              Schedule Governance Examination
+              Schedule a Governance Impact Review
             </a>
+            <p style={{
+              fontSize: 'clamp(0.95rem, 1.5vw, 1.05rem)',
+              color: '#555',
+              fontWeight: 500
+            }}>
+              30-minute review. No preparation required.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Understanding Reconstruction Tax - NEW SECTION */}
+      {/* The Reconstruction Tax */}
       <section style={{ 
-        padding: 'clamp(5rem, 10vw, 8rem) clamp(1.5rem, 5vw, 2.5rem)', 
+        padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
         background: 'linear-gradient(180deg, #1a1a1a 0%, #000 100%)',
         position: 'relative'
       }}>
@@ -223,547 +228,313 @@ export default function YavardiWebsite() {
           backgroundSize: '20px 20px'
         }} />
         
-        <div style={{ maxWidth: '900px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
           <h2 style={{ 
-            fontSize: 'clamp(2rem, 5vw, 2.75rem)', 
-            fontWeight: 900, 
-            marginBottom: '1.5rem',
-            letterSpacing: '-0.02em',
-            textAlign: 'center',
-            color: '#fff'
-          }}>
-            Understanding Reconstruction Tax
-          </h2>
-          
-          <p style={{ 
-            fontSize: 'clamp(1.1rem, 2vw, 1.25rem)', 
-            lineHeight: 1.7, 
-            color: '#b0b0b0', 
-            marginBottom: 'clamp(3rem, 6vw, 4rem)',
-            textAlign: 'center',
-            fontWeight: 600
-          }}>
-            Mid-sized litigation practices lose over $1.5 million annually to pre-invoice write-downs and reconstruction labor.
-          </p>
-          
-          {/* Revenue Loss */}
-          <div style={{ 
-            marginBottom: 'clamp(2rem, 4vw, 2.5rem)',
-            background: 'rgba(255, 255, 255, 0.05)',
-            padding: 'clamp(1.5rem, 3vw, 2rem)',
-            borderRadius: '4px',
-            borderLeft: '4px solid rgba(219, 219, 219, 0.4)'
-          }}>
-            <h3 style={{
-              fontSize: 'clamp(1.3rem, 3vw, 1.6rem)',
-              fontWeight: 900,
-              color: '#fff',
-              marginBottom: '1.25rem'
-            }}>
-              Revenue Loss at Billing Review
-            </h3>
-            <p style={{
-              fontSize: 'clamp(1rem, 2vw, 1.15rem)',
-              lineHeight: 1.8,
-              color: '#b0b0b0',
-              fontWeight: 500,
-              marginBottom: '1.25rem'
-            }}>
-              When recorded billable work reaches billing review without proof of authorization, firms reduce invoices to limit exposure. For a 35-attorney firm recording over $10 million in billable work annually, industry-standard realization rates mean roughly $1.6 million in recorded value gets written down before invoicing.
-            </p>
-            <p style={{
-              fontSize: 'clamp(1rem, 2vw, 1.15rem)',
-              lineHeight: 1.8,
-              color: '#b0b0b0',
-              fontWeight: 500,
-              marginBottom: '1.25rem'
-            }}>
-              Some of that is intentional. Relationship discounts, pricing adjustments, judgment-based concessions.
-            </p>
-            <p style={{
-              fontSize: 'clamp(1rem, 2vw, 1.15rem)',
-              lineHeight: 1.8,
-              color: '#fff',
-              fontWeight: 700
-            }}>
-              The rest is defensive. Work gets reduced because approval can't be proven, scope wasn't documented, or authority is unclear. That defensive portion is addressable.
-            </p>
-          </div>
-          
-          {/* Capacity Loss */}
-          <div style={{ 
-            marginBottom: 'clamp(2rem, 4vw, 2.5rem)',
-            background: 'rgba(255, 255, 255, 0.05)',
-            padding: 'clamp(1.5rem, 3vw, 2rem)',
-            borderRadius: '4px',
-            borderLeft: '4px solid rgba(219, 219, 219, 0.4)'
-          }}>
-            <h3 style={{
-              fontSize: 'clamp(1.3rem, 3vw, 1.6rem)',
-              fontWeight: 900,
-              color: '#fff',
-              marginBottom: '1.25rem'
-            }}>
-              Capacity Loss to Reconstruction
-            </h3>
-            <p style={{
-              fontSize: 'clamp(1rem, 2vw, 1.15rem)',
-              lineHeight: 1.8,
-              color: '#b0b0b0',
-              fontWeight: 500,
-              marginBottom: '1.25rem'
-            }}>
-              When disputes arise, senior attorneys reconstruct what happened.
-            </p>
-            <p style={{
-              fontSize: 'clamp(1rem, 2vw, 1.15rem)',
-              lineHeight: 1.8,
-              color: '#b0b0b0',
-              fontWeight: 500,
-              marginBottom: '1.25rem'
-            }}>
-              Emails get searched. Calendars get reviewed. Partners debate historical decisions. Attorneys explain old work instead of producing new work.
-            </p>
-            <p style={{
-              fontSize: 'clamp(1rem, 2vw, 1.15rem)',
-              lineHeight: 1.8,
-              color: '#fff',
-              fontWeight: 700
-            }}>
-              This is billable-capable time that generates zero revenue. For most firms, reconstruction cycles consume 300-400 hours of senior attorney time annually.
-            </p>
-          </div>
-          
-          {/* Dominion Intro */}
-          <p style={{
-            fontSize: 'clamp(1.1rem, 2vw, 1.25rem)',
-            lineHeight: 1.8,
-            color: '#b0b0b0',
-            fontWeight: 600,
-            marginBottom: 'clamp(2rem, 4vw, 2.5rem)',
-            textAlign: 'center'
-          }}>
-            Yavardi's flagship Dominion governance platform deploys as infrastructure within your Microsoft environment to eliminate the structural cause of Reconstruction Tax.
-          </p>
-          
-          {/* What Dominion Addresses */}
-          <div style={{
-            background: '#DBDBDB',
-            padding: 'clamp(1.5rem, 3vw, 2rem)',
-            borderRadius: '4px'
-          }}>
-            <h3 style={{
-              fontSize: 'clamp(1.3rem, 3vw, 1.6rem)',
-              fontWeight: 900,
-              color: '#000000',
-              marginBottom: '1.25rem'
-            }}>
-              What Dominion Addresses
-            </h3>
-            <p style={{
-              fontSize: 'clamp(1rem, 2vw, 1.15rem)',
-              lineHeight: 1.8,
-              color: '#333',
-              fontWeight: 500,
-              marginBottom: '1.25rem'
-            }}>
-              Total exposure for a firm this size runs nearly $2 million per year.
-            </p>
-            <p style={{
-              fontSize: 'clamp(1rem, 2vw, 1.15rem)',
-              lineHeight: 1.8,
-              color: '#000000',
-              fontWeight: 700
-            }}>
-              Dominion targets the portion caused by missing authority, unclear scope, and absent execution evidence during billing review.
-            </p>
-          </div>
-          
-          {/* Reconstruction Tax Diagram */}
-          <div style={{ marginTop: 'clamp(3rem, 6vw, 4rem)' }}>
-            <h3 style={{
-              fontSize: 'clamp(1.3rem, 3vw, 1.6rem)',
-              fontWeight: 900,
-              color: '#fff',
-              marginBottom: '1.5rem',
-              textAlign: 'center'
-            }}>
-              How Authority Capture Changes the Outcome
-            </h3>
-            <div style={{
-              background: '#DBDBDB',
-              borderRadius: '8px',
-              padding: '1rem',
-              overflow: 'hidden'
-            }}>
-              <svg width="100%" viewBox="0 0 1800 1400" xmlns="http://www.w3.org/2000/svg" style={{ display: 'block' }}>
-                <defs>
-                  <linearGradient id="gradLeftBox2" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="#F8B461" stopOpacity="1" />
-                    <stop offset="100%" stopColor="#E89A47" stopOpacity="1" />
-                  </linearGradient>
-                  <linearGradient id="gradLeftBox3" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="#E85D47" stopOpacity="1" />
-                    <stop offset="100%" stopColor="#D63C2F" stopOpacity="1" />
-                  </linearGradient>
-                  <linearGradient id="gradLeftBox4" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="#C0392B" stopOpacity="1" />
-                    <stop offset="100%" stopColor="#8B0000" stopOpacity="1" />
-                  </linearGradient>
-                  <linearGradient id="gradLeftBox5" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="#8B0000" stopOpacity="1" />
-                    <stop offset="100%" stopColor="#5C0000" stopOpacity="1" />
-                  </linearGradient>
-                  <linearGradient id="gradRightBox2" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="#B8E4C8" stopOpacity="1" />
-                    <stop offset="100%" stopColor="#95D5A8" stopOpacity="1" />
-                  </linearGradient>
-                  <linearGradient id="gradRightBox3" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="#52B788" stopOpacity="1" />
-                    <stop offset="100%" stopColor="#3D9E71" stopOpacity="1" />
-                  </linearGradient>
-                  <linearGradient id="gradRightBox4" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="#2D6A4F" stopOpacity="1" />
-                    <stop offset="100%" stopColor="#1F4D37" stopOpacity="1" />
-                  </linearGradient>
-                  <linearGradient id="gradRightBox5" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="#1B4332" stopOpacity="1" />
-                    <stop offset="100%" stopColor="#0B3620" stopOpacity="1" />
-                  </linearGradient>
-                  <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
-                    <feDropShadow dx="0" dy="4" stdDeviation="6" floodOpacity="0.25" floodColor="#000000"/>
-                  </filter>
-                </defs>
-                <rect width="1800" height="1400" fill="#dbdbdb"/>
-                <text x="400" y="55" textAnchor="middle" fontSize="26" fontWeight="700" fill="#000000">Before Dominion</text>
-                <text x="400" y="85" textAnchor="middle" fontSize="16" fontWeight="400" fill="#000000">(Status Quo)</text>
-                <text x="1400" y="55" textAnchor="middle" fontSize="26" fontWeight="700" fill="#000000">After Dominion</text>
-                <text x="1400" y="85" textAnchor="middle" fontSize="16" fontWeight="400" fill="#000000">(With Authority Capture)</text>
-                <line x1="900" y1="120" x2="900" y2="1250" stroke="#B8B8B8" strokeWidth="1" strokeDasharray="8,8"/>
-                <rect x="80" y="130" width="640" height="100" rx="8" ry="8" fill="#F5F5F5" stroke="#DCDCDC" strokeWidth="1" filter="url(#shadow)"/>
-                <text x="400" y="165" textAnchor="middle" fontSize="18" fontWeight="700" fill="#000000">Scope Change Occurs</text>
-                <text x="400" y="195" textAnchor="middle" fontSize="14" fontWeight="600" fill="#000000">Additional custodians identified, discovery expands</text>
-                <line x1="400" y1="230" x2="400" y2="255" stroke="#999999" strokeWidth="2"/>
-                <polygon points="400,265 395,255 405,255" fill="#999999"/>
-                <text x="400" y="295" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">No formal capture</text>
-                <rect x="80" y="305" width="640" height="170" rx="8" ry="8" fill="url(#gradLeftBox2)" filter="url(#shadow)"/>
-                <text x="400" y="360" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Work Proceeds Without Authority Record</text>
-                <text x="400" y="390" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Paralegal records time. Associates bill hours.</text>
-                <text x="400" y="412" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Partners approve informally via in-person conversations,</text>
-                <text x="400" y="434" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Teams, or email. No formal record exists.</text>
-                <line x1="400" y1="475" x2="400" y2="500" stroke="#E89A47" strokeWidth="2"/>
-                <polygon points="400,510 395,500 405,500" fill="#E89A47"/>
-                <text x="400" y="540" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Months pass</text>
-                <rect x="80" y="560" width="640" height="170" rx="8" ry="8" fill="url(#gradLeftBox3)" filter="url(#shadow)"/>
-                <text x="400" y="600" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Billing Review Questions Charges</text>
-                <text x="400" y="635" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Partner cannot prove scope was approved.</text>
-                <text x="400" y="657" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Charges are indefensible.</text>
-                <text x="400" y="690" textAnchor="middle" fontSize="19" fontWeight="700" fill="#FFD166">Over $250,000 written down</text>
-                <line x1="400" y1="730" x2="400" y2="755" stroke="#D63C2F" strokeWidth="2"/>
-                <polygon points="400,765 395,755 405,755" fill="#D63C2F"/>
-                <text x="400" y="805" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Escalation</text>
-                <rect x="80" y="825" width="640" height="170" rx="8" ry="8" fill="url(#gradLeftBox4)" filter="url(#shadow)"/>
-                <text x="400" y="860" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Senior Attorney Reconstructs Approval</text>
-                <text x="400" y="895" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">15+ hours searching emails, chats, files</text>
-                <text x="400" y="917" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">trying to establish decision trail.</text>
-                <text x="400" y="950" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">No proof exists.</text>
-                <line x1="400" y1="995" x2="400" y2="1020" stroke="#8B0000" strokeWidth="2"/>
-                <polygon points="400,1030 395,1020 405,1020" fill="#8B0000"/>
-                <text x="400" y="1070" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Revenue loss</text>
-                <rect x="80" y="1090" width="640" height="170" rx="8" ry="8" fill="url(#gradLeftBox5)" filter="url(#shadow)"/>
-                <text x="400" y="1120" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Reconstruction Tax Paid</text>
-                <text x="400" y="1160" textAnchor="middle" fontSize="24" fontWeight="700" fill="#FFD166">Over $1.5 million annually</text>
-                <text x="400" y="1200" textAnchor="middle" fontSize="13" fontWeight="600" fill="#FFFFFF">Conservative floor for mid-sized firm</text>
-                <text x="400" y="1228" textAnchor="middle" fontSize="12" fontWeight="500" fill="#FFFFFF">Authority-driven losses accumulate invisibly</text>
-                <rect x="1080" y="130" width="640" height="100" rx="8" ry="8" fill="#F5F5F5" stroke="#DCDCDC" strokeWidth="1" filter="url(#shadow)"/>
-                <text x="1400" y="165" textAnchor="middle" fontSize="18" fontWeight="700" fill="#000000">Scope Change Occurs</text>
-                <text x="1400" y="195" textAnchor="middle" fontSize="14" fontWeight="600" fill="#000000">Additional custodians identified, discovery expands</text>
-                <line x1="1400" y1="230" x2="1400" y2="255" stroke="#52B788" strokeWidth="2"/>
-                <polygon points="1400,265 1395,255 1405,255" fill="#52B788"/>
-                <text x="1400" y="295" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Authority requested</text>
-                <rect x="1080" y="305" width="640" height="190" rx="8" ry="8" fill="url(#gradRightBox2)" filter="url(#shadow)"/>
-                <text x="1400" y="340" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Approval Captured in Real Time ✓</text>
-                <text x="1400" y="370" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Approver is notified approval is needed.</text>
-                <text x="1400" y="392" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Approver clicks approval link. Reviews scope and cost.</text>
-                <text x="1400" y="414" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Approves or declines in 20 seconds.</text>
-                <text x="1400" y="450" textAnchor="middle" fontSize="13" fontWeight="700" fill="#FFFFFF">AUTH-2025-00142 generated</text>
-                <line x1="1400" y1="495" x2="1400" y2="520" stroke="#52B788" strokeWidth="2"/>
-                <polygon points="1400,530 1395,520 1405,520" fill="#52B788"/>
-                <text x="1400" y="565" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Record exists</text>
-                <rect x="1080" y="590" width="640" height="170" rx="8" ry="8" fill="url(#gradRightBox3)" filter="url(#shadow)"/>
-                <text x="1400" y="620" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Billing Review Pulls Authority Record</text>
-                <text x="1400" y="655" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Partner pulls AUTH-2025-00142 instantly.</text>
-                <text x="1400" y="677" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Complete approval packet available: who, when, what.</text>
-                <text x="1400" y="715" textAnchor="middle" fontSize="14" fontWeight="700" fill="#FFFFFF">Defensibility is certain.</text>
-                <line x1="1400" y1="760" x2="1400" y2="785" stroke="#3D9E71" strokeWidth="2"/>
-                <polygon points="1400,795 1395,785 1405,785" fill="#3D9E71"/>
-                <text x="1400" y="830" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Zero reconstruction</text>
-                <rect x="1080" y="855" width="640" height="170" rx="8" ry="8" fill="url(#gradRightBox4)" filter="url(#shadow)"/>
-                <text x="1400" y="885" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Zero Reconstruction Labor</text>
-                <text x="1400" y="920" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">No searching. No email mining. No uncertainty.</text>
-                <text x="1400" y="942" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Authority is immutable and exportable.</text>
-                <text x="1400" y="975" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Senior time stays on revenue work.</text>
-                <line x1="1400" y1="1025" x2="1400" y2="1050" stroke="#1F4D37" strokeWidth="2"/>
-                <polygon points="1400,1060 1395,1050 1405,1050" fill="#1F4D37"/>
-                <text x="1400" y="1100" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Revenue protected</text>
-                <rect x="1080" y="1130" width="640" height="170" rx="8" ry="8" fill="url(#gradRightBox5)" filter="url(#shadow)"/>
-                <text x="1400" y="1160" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Reconstruction Tax Eliminated</text>
-                <text x="1400" y="1205" textAnchor="middle" fontSize="24" fontWeight="700" fill="#B7E4C7">$280,000–$320,000 recovered annually</text>
-                <text x="1400" y="1245" textAnchor="middle" fontSize="13" fontWeight="600" fill="#FFFFFF">Realistic recovery from authority-driven gaps</text>
-                <text x="1400" y="1273" textAnchor="middle" fontSize="12" fontWeight="500" fill="#FFFFFF">Revenue and capacity protected going forward</text>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What We Govern */}
-      <section style={{ padding: 'clamp(4rem, 10vw, 7rem) clamp(1.5rem, 5vw, 2.5rem)', background: '#DBDBDB' }}>
-        <div style={{ maxWidth: '1300px', margin: '0 auto' }}>
-          <h2 style={{ 
-            fontSize: 'clamp(2.25rem, 5vw, 3.25rem)', 
-            fontWeight: 900, 
-            marginBottom: '1.5rem', 
-            color: '#000',
-            letterSpacing: '-0.02em',
-            textAlign: 'center'
-          }}>
-            What We Govern
-          </h2>
-          <p style={{ 
-            fontSize: 'clamp(1.1rem, 2vw, 1.25rem)', 
-            color: '#666', 
-            textAlign: 'center', 
-            marginBottom: '1rem',
-            maxWidth: '750px',
-            margin: '0 auto 1rem',
-            fontWeight: 600
-          }}>
-            Dominion governs execution, not intention. Yavardi's platform focuses on the points where informal decisions become irreversible system actions.
-          </p>
-          <p style={{ 
-            fontSize: 'clamp(1.1rem, 2vw, 1.25rem)', 
-            color: '#000', 
-            textAlign: 'center', 
-            marginBottom: 'clamp(3rem, 6vw, 5rem)',
-            maxWidth: '750px',
-            margin: '0 auto clamp(3rem, 6vw, 5rem)',
-            fontWeight: 700
-          }}>
-            Without that governance, firms pay Reconstruction Tax.
-          </p>
-          
-          <div style={{ 
-            display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
-            gap: 'clamp(1.5rem, 3vw, 2.5rem)'
-          }}>
-            {[
-              {
-                title: 'Decision Authority',
-                description: 'We ensure that legally consequential decisions are bound to identifiable individuals acting in defined roles, with authority recorded at the moment execution occurs.'
-              },
-              {
-                title: 'Billing and Financial Actions',
-                description: 'We govern how time adjustments, invoice modifications, and financial approvals are executed so revenue decisions remain defensible after distribution, audit, or dispute.'
-              },
-              {
-                title: 'Documents and Workflow Finality',
-                description: 'We control how documents move from draft to final, how discovery and production sets are assembled, and how workflow actions become binding records without reliance on reconstruction.'
-              },
-              {
-                title: 'System Access and Identity',
-                description: 'We establish controls over who can access which systems, when access is granted or revoked, and how identity is verified before consequential actions are executed.'
-              }
-            ].map((item, i) => (
-              <div key={i} style={{
-                background: '#e8e8e8',
-                padding: 'clamp(2rem, 4vw, 3rem)',
-                borderRadius: '4px',
-                border: '1px solid #c8c8c8',
-                transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
-              }}>
-                <h3 style={{ 
-                  fontSize: 'clamp(1.3rem, 3vw, 1.75rem)', 
-                  fontWeight: 900, 
-                  marginBottom: '1.25rem', 
-                  color: '#000',
-                  letterSpacing: '-0.01em'
-                }}>{item.title}</h3>
-                <p style={{ 
-                  color: '#333', 
-                  lineHeight: 1.7,
-                  fontSize: 'clamp(1rem, 2vw, 1.1rem)',
-                  fontWeight: 600
-                }}>{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Where Governance Breaks Down */}
-      <section style={{ 
-        padding: 'clamp(4rem, 10vw, 7rem) clamp(1.5rem, 5vw, 2.5rem)', 
-        background: 'linear-gradient(135deg, #c8c8c8 0%, #DBDBDB 100%)' 
-      }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <h2 style={{ 
-            fontSize: 'clamp(2.25rem, 5vw, 3.25rem)', 
-            fontWeight: 900, 
-            marginBottom: '1.5rem', 
-            color: '#000',
-            letterSpacing: '-0.02em',
-            textAlign: 'center'
-          }}>
-            Where Governance Commonly Breaks Down
-          </h2>
-          <p style={{ 
-            fontSize: 'clamp(1.1rem, 2vw, 1.25rem)', 
-            color: '#666', 
-            textAlign: 'center', 
-            marginBottom: 'clamp(2.5rem, 5vw, 4rem)',
-            fontWeight: 600
-          }}>
-            In most firms, system actions occur based on assumed approval rather than enforced authority.
-          </p>
-          
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-            {[
-              { label: 'Billing', text: 'adjustments are made without defensible lineage.' },
-              { label: 'Documents', text: 'are finalized without recorded approval events.' },
-              { label: 'Discovery', text: 'decisions are executed without a provable chain of custody.' },
-              { label: 'Settlement authority', text: 'is implied through conversation rather than bound through execution.' },
-              { label: 'Work', text: 'completes, but authority remains invisible.' }
-            ].map((item, i) => (
-              <div key={i} style={{
-                background: '#DBDBDB',
-                padding: 'clamp(1.25rem, 3vw, 1.75rem) clamp(1.5rem, 4vw, 2.25rem)',
-                borderRadius: '4px',
-                borderLeft: '4px solid #000000',
-                boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                fontSize: 'clamp(1rem, 2vw, 1.1rem)',
-                fontWeight: 600
-              }}>
-                <strong style={{ color: '#000', fontWeight: 700 }}>{item.label}</strong> {item.text}
-              </div>
-            ))}
-          </div>
-          
-          <p style={{ 
-            fontSize: 'clamp(1.1rem, 2vw, 1.25rem)', 
-            color: '#2a2a2a', 
-            marginTop: 'clamp(2.5rem, 5vw, 3.5rem)', 
-            textAlign: 'center', 
-            fontWeight: 700
-          }}>
-            Over time, these gaps accumulate into operational friction, partner disputes, client challenges, audit exposure, and unnecessary write-downs.
-          </p>
-        </div>
-      </section>
-
-      {/* Why Firms Currently Pay Their Reconstruction Tax - NEW SECTION */}
-      <section style={{ 
-        padding: 'clamp(5rem, 10vw, 8rem) clamp(1.5rem, 5vw, 2.5rem)', 
-        background: '#DBDBDB'
-      }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-          <h2 style={{ 
-            fontSize: 'clamp(2rem, 5vw, 2.75rem)', 
+            fontSize: 'clamp(1.75rem, 4vw, 2.25rem)', 
             fontWeight: 900, 
             marginBottom: '2rem',
             letterSpacing: '-0.02em',
-            textAlign: 'center',
-            color: '#000'
+            color: '#fff'
           }}>
-            Why Firms Currently Pay Their Reconstruction Tax
+            The Reconstruction Tax
           </h2>
           
-          <div style={{
-            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)',
-            lineHeight: 1.8,
-            color: '#333',
-            fontWeight: 600
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#b0b0b0', 
+            marginBottom: '1.5rem',
+            fontWeight: 500
           }}>
-            <p style={{ marginBottom: '1.5rem' }}>
-              Authority capture failure isn't negligence. It's a structural gap most firms have never examined. The systems work. Documents get filed. Invoices go out. Cases close. Nothing breaks visibly enough to force the question.
-            </p>
-            <p style={{ marginBottom: '1.5rem' }}>
-              Write-downs happen gradually across hundreds of matters. Reconstruction labor gets absorbed into normal operations. The cost is real, but invisible. It shows up as margin pressure, not as a line item anyone tracks.
-            </p>
-            <p style={{ color: '#000', fontWeight: 700 }}>
-              Dominion eliminates the structural cause. Once authority capture infrastructure is in place, the tax stops accruing.
-            </p>
-          </div>
+            The Reconstruction Tax is the cost of proving decisions after execution has already occurred.
+          </p>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#b0b0b0', 
+            marginBottom: '1.5rem',
+            fontWeight: 500
+          }}>
+            It surfaces when the firm is asked to explain who approved a change, when it was approved, and under what authority—during billing review, reporting, audits, or disputes.
+          </p>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#fff', 
+            fontWeight: 700
+          }}>
+            Billing entries, approvals, document changes, access actions, and system handoffs execute every day without a complete lineage of who acted, what triggered the action, and under what authority it occurred.
+          </p>
+        </div>
+      </section>
+
+      {/* Engagement Record */}
+      <section style={{ 
+        padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
+        background: '#DBDBDB'
+      }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+          <h2 style={{ 
+            fontSize: 'clamp(1rem, 1.8vw, 1.15rem)', 
+            fontWeight: 700, 
+            marginBottom: '2rem',
+            letterSpacing: '0.05em',
+            color: '#666',
+            textTransform: 'uppercase'
+          }}>
+            Engagement Record — Billing & Reporting Transition
+          </h2>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#333', 
+            marginBottom: '1.5rem',
+            fontWeight: 500
+          }}>
+            System transition executed with billing and partner compensation cycles active.
+          </p>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#333', 
+            marginBottom: '1.5rem',
+            fontWeight: 500
+          }}>
+            Financial actions executed across multiple systems. Approval communicated through conversation and email.
+          </p>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#333', 
+            marginBottom: '1.5rem',
+            fontWeight: 500
+          }}>
+            No execution-time record preserving approver identity. No execution-time record preserving approver role. No execution-time record preserving approval timing.
+          </p>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#333', 
+            marginBottom: '1.5rem',
+            fontWeight: 500
+          }}>
+            Discrepancies identified after reporting close. Resolution required retrospective reconstruction across systems.
+          </p>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#000', 
+            fontWeight: 700
+          }}>
+            Losses accumulated across reporting cycles.
+          </p>
+        </div>
+      </section>
+
+      {/* Dominion */}
+      <section style={{ 
+        padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
+        background: 'linear-gradient(180deg, #000 0%, #1a1a1a 100%)',
+        position: 'relative'
+      }}>
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          opacity: 0.02,
+          backgroundImage: 'repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)',
+          backgroundSize: '20px 20px'
+        }} />
+        
+        <div style={{ maxWidth: '800px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
+          <h2 style={{ 
+            fontSize: 'clamp(1.75rem, 4vw, 2.25rem)', 
+            fontWeight: 900, 
+            marginBottom: '2rem',
+            letterSpacing: '-0.02em',
+            color: '#fff'
+          }}>
+            Dominion
+          </h2>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#fff', 
+            marginBottom: '1.5rem',
+            fontWeight: 700
+          }}>
+            Dominion captures authority at the moment execution occurs.
+          </p>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#b0b0b0', 
+            marginBottom: '1.5rem',
+            fontWeight: 500
+          }}>
+            Dominion is Yavardi's governance platform for law firms. It deploys inside the firm's existing Microsoft environment.
+          </p>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#b0b0b0', 
+            marginBottom: '1.5rem',
+            fontWeight: 500
+          }}>
+            When a consequential action occurs, Dominion preserves the approval that already took place as part of execution.
+          </p>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#fff', 
+            fontWeight: 700
+          }}>
+            That record remains available during billing review, audits, and disputes.
+          </p>
+        </div>
+      </section>
+
+      {/* Systems Boundary */}
+      <section style={{ 
+        padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
+        background: '#DBDBDB'
+      }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#333', 
+            marginBottom: '1.5rem',
+            fontWeight: 500
+          }}>
+            Billing systems record what was billed. Document systems record what was saved. Access controls record who can enter.
+          </p>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#000', 
+            marginBottom: '1.5rem',
+            fontWeight: 700
+          }}>
+            None of these systems preserve who authorized a decision at execution.
+          </p>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#000', 
+            fontWeight: 700
+          }}>
+            Dominion preserves authority where decisions occur—before execution reaches billing, documents, or access layers.
+          </p>
+        </div>
+      </section>
+
+      {/* What Changes Inside the Firm */}
+      <section style={{ 
+        padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
+        background: 'linear-gradient(180deg, #1a1a1a 0%, #000 100%)',
+        position: 'relative'
+      }}>
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          opacity: 0.02,
+          backgroundImage: 'repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)',
+          backgroundSize: '20px 20px'
+        }} />
+        
+        <div style={{ maxWidth: '800px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
+          <h2 style={{ 
+            fontSize: 'clamp(1.75rem, 4vw, 2.25rem)', 
+            fontWeight: 900, 
+            marginBottom: '2rem',
+            letterSpacing: '-0.02em',
+            color: '#fff'
+          }}>
+            What Changes Inside the Firm
+          </h2>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#b0b0b0', 
+            marginBottom: '1.5rem',
+            fontWeight: 500
+          }}>
+            Authority is preserved at execution. Billing review relies on records rather than memory. Scope questions resolve without escalation. Senior time remains focused on revenue work. Approved work is defended without reconstruction.
+          </p>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#fff', 
+            fontWeight: 700
+          }}>
+            Execution continues in the same tools. Authority is preserved when it matters.
+          </p>
         </div>
       </section>
 
       {/* Final CTA */}
       <section style={{ 
-        padding: 'clamp(5rem, 10vw, 8rem) clamp(1.5rem, 5vw, 2.5rem)', 
-        background: 'linear-gradient(135deg, #c8c8c8 0%, #DBDBDB 100%)' 
+        padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
+        background: '#DBDBDB'
       }}>
-        <div style={{ maxWidth: '700px', margin: '0 auto' }}>
-          <div style={{
-            background: 'linear-gradient(180deg, #000000 0%, #061018 100%)',
-            borderRadius: '16px',
-            padding: 'clamp(3rem, 6vw, 4.5rem) clamp(2rem, 5vw, 3.5rem)',
-            textAlign: 'center',
-            boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
-            position: 'relative',
-            overflow: 'hidden'
+        <div style={{ maxWidth: '700px', margin: '0 auto', textAlign: 'center' }}>
+          <p style={{
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)',
+            lineHeight: 1.8,
+            color: '#000',
+            fontWeight: 700,
+            marginBottom: '2.5rem'
           }}>
-            <div style={{
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              opacity: 0.02,
-              backgroundImage: 'repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)',
-              backgroundSize: '20px 20px'
-            }} />
-            <div style={{ position: 'relative', zIndex: 1 }}>
-              <h2 style={{ 
-                fontSize: 'clamp(1.75rem, 4vw, 2.25rem)', 
-                fontWeight: 900, 
-                marginBottom: '1.25rem',
-                letterSpacing: '-0.02em',
-                color: '#fff'
-              }}>
-                Governance Entry
-              </h2>
-              <p style={{ 
-                fontSize: 'clamp(1rem, 2vw, 1.15rem)', 
-                marginBottom: 'clamp(2rem, 4vw, 2.5rem)', 
-                color: '#b0b0b0',
-                lineHeight: 1.6,
-                fontWeight: 500
-              }}>
-                See if your firm meets the requirements for governance
-              </p>
-              <a 
-                href="https://calendly.com/jfreeman-yavardi/yavardi-governance-examination"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: 'inline-block',
-                  background: '#DBDBDB',
-                  color: '#000',
-                  padding: 'clamp(0.875rem, 2vw, 1rem) clamp(2rem, 4vw, 2.5rem)',
-                  borderRadius: '6px',
-                  textDecoration: 'none',
-                  fontWeight: 700,
-                  fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)',
-                  transition: 'all 0.2s ease',
-                  border: 'none',
-                  cursor: 'pointer'
-                }}
-              >
-                Schedule Governance Examination
-              </a>
-            </div>
-          </div>
+            Authority capture must exist at the infrastructure layer. It cannot be added through policy or process after the fact.
+          </p>
+          <a 
+            href="https://calendly.com/jfreeman-yavardi/yavardi-governance-examination"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-block',
+              background: '#000000',
+              color: '#fff',
+              padding: 'clamp(0.875rem, 2vw, 1rem) clamp(1.75rem, 4vw, 2.5rem)',
+              borderRadius: '3px',
+              textDecoration: 'none',
+              fontWeight: 700,
+              fontSize: 'clamp(1rem, 2vw, 1.1rem)',
+              border: 'none',
+              cursor: 'pointer',
+              marginBottom: '1rem'
+            }}
+          >
+            Schedule a Governance Impact Review
+          </a>
+          <p style={{
+            fontSize: 'clamp(0.95rem, 1.5vw, 1.05rem)',
+            color: '#666',
+            fontWeight: 500
+          }}>
+            Initial review conducted at no cost. Findings inform your governance roadmap.
+          </p>
         </div>
       </section>
 
@@ -855,14 +626,14 @@ export default function YavardiWebsite() {
           zIndex: 1
         }}>
           <h1 style={{ 
-            fontSize: 'clamp(2.5rem, 6vw, 3.5rem)', 
+            fontSize: 'clamp(2.25rem, 5vw, 3rem)', 
             fontWeight: 900, 
-            marginBottom: '2rem', 
+            marginBottom: '1.5rem', 
             color: '#FFFFFF',
             lineHeight: 1.2,
             letterSpacing: '-0.02em'
           }}>
-            Our Services
+            How Dominion Works
           </h1>
           
           <p style={{
@@ -878,45 +649,45 @@ export default function YavardiWebsite() {
         </div>
       </section>
 
-      {/* Services Intro */}
+      {/* Intro */}
       <section style={{ 
         padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
         background: '#DBDBDB' 
       }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <p style={{ 
             fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
             lineHeight: 1.8, 
-            color: '#000',
-            fontWeight: 600,
-            marginBottom: '2rem'
+            color: '#333',
+            fontWeight: 500,
+            marginBottom: '1.5rem'
           }}>
             Yavardi provides technology governance services focused on how legally consequential work is executed inside a law firm's digital environment.
           </p>
           <p style={{ 
             fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
             lineHeight: 1.8, 
-            color: '#000',
-            fontWeight: 600,
-            marginBottom: '2rem'
+            color: '#333',
+            fontWeight: 500,
+            marginBottom: '1.5rem'
           }}>
             Our work addresses the point where human decisions become system actions, and whether those actions remain defensible when examined later.
           </p>
           <p style={{ 
             fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
             lineHeight: 1.8, 
-            color: '#000',
-            fontWeight: 600
+            color: '#333',
+            fontWeight: 500
           }}>
             We work with firms whose legal operations rely on digital systems to manage documents, billing, communication, access, and workflow, and where informal execution creates operational, financial, and legal exposure.
           </p>
         </div>
       </section>
 
-      {/* The Dominion Platform */}
+      {/* The Problem: Authority Gaps */}
       <section style={{ 
-        padding: 'clamp(3rem, 6vw, 5rem) clamp(1.5rem, 5vw, 2.5rem)', 
-        background: '#000000',
+        padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
+        background: 'linear-gradient(180deg, #1a1a1a 0%, #000 100%)',
         position: 'relative'
       }}>
         <div style={{
@@ -925,587 +696,85 @@ export default function YavardiWebsite() {
           left: 0,
           right: 0,
           bottom: 0,
-          opacity: 0.04,
+          opacity: 0.02,
           backgroundImage: 'repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)',
-          backgroundSize: '12px 12px'
+          backgroundSize: '20px 20px'
         }} />
         
-        <div style={{ maxWidth: '900px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
           <h2 style={{ 
-            fontSize: 'clamp(2rem, 4vw, 2.5rem)', 
+            fontSize: 'clamp(1.75rem, 4vw, 2.25rem)', 
             fontWeight: 900, 
-            marginBottom: '1.5rem', 
-            color: '#DBDBDB',
-            letterSpacing: '-0.02em',
-            textAlign: 'center'
-          }}>
-            The Dominion Platform
-          </h2>
-          
-          <p style={{ 
-            fontSize: 'clamp(1.1rem, 2vw, 1.25rem)', 
-            lineHeight: 1.8, 
-            color: '#b0b0b0',
-            fontWeight: 600,
             marginBottom: '2rem',
-            textAlign: 'center'
-          }}>
-            Dominion is Yavardi's governance platform for law firms. It deploys as infrastructure within your Microsoft environment to enforce authority controls at the system level.
-          </p>
-          
-          <div style={{
-            background: 'rgba(219, 219, 219, 0.1)',
-            padding: 'clamp(2rem, 4vw, 3rem)',
-            borderRadius: '4px',
-            borderLeft: '4px solid #DBDBDB'
-          }}>
-            <h3 style={{
-              fontSize: 'clamp(1.3rem, 3vw, 1.6rem)',
-              fontWeight: 900,
-              color: '#DBDBDB',
-              marginBottom: '1.5rem'
-            }}>
-              Platform Architecture
-            </h3>
-            
-            <div style={{ marginBottom: '1.5rem' }}>
-              <p style={{
-                fontSize: 'clamp(1.05rem, 2vw, 1.2rem)',
-                lineHeight: 1.8,
-                color: '#b0b0b0',
-                fontWeight: 600
-              }}>
-                <strong style={{ color: '#fff' }}>Tier 1: Environment Governance</strong><br/>
-                Establishes system boundaries and authorized identities
-              </p>
-            </div>
-            
-            <div style={{ marginBottom: '1.5rem' }}>
-              <p style={{
-                fontSize: 'clamp(1.05rem, 2vw, 1.2rem)',
-                lineHeight: 1.8,
-                color: '#b0b0b0',
-                fontWeight: 600
-              }}>
-                <strong style={{ color: '#fff' }}>Tier 2: Workflow Governance</strong><br/>
-                Binds authority to execution across billing, documents, and matter flow
-              </p>
-            </div>
-            
-            <div style={{ marginBottom: '2rem' }}>
-              <p style={{
-                fontSize: 'clamp(1.05rem, 2vw, 1.2rem)',
-                lineHeight: 1.8,
-                color: '#b0b0b0',
-                fontWeight: 600
-              }}>
-                <strong style={{ color: '#fff' }}>Tier 3: Intelligence Layer</strong><br/>
-                Provides knowledge access using only approved and final firm artifacts
-              </p>
-            </div>
-            
-            <p style={{
-              fontSize: 'clamp(1.05rem, 2vw, 1.2rem)',
-              lineHeight: 1.8,
-              color: '#fff',
-              fontWeight: 700,
-              textAlign: 'center'
-            }}>
-              Every engagement begins with Tier 1. Tier 2 builds on that foundation. Tier 3 is optional and operates entirely within the governed environment.
-            </p>
-          </div>
-          
-          <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
-            <a 
-              onClick={() => navigateTo('dominion')}
-              style={{
-                display: 'inline-block',
-                background: '#DBDBDB',
-                color: '#000',
-                padding: 'clamp(0.875rem, 2vw, 1rem) clamp(2rem, 4vw, 2.5rem)',
-                borderRadius: '6px',
-                textDecoration: 'none',
-                fontWeight: 700,
-                fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)',
-                cursor: 'pointer'
-              }}
-            >
-              Learn More About Dominion →
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Environment Governance */}
-      <section style={{ 
-        padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
-        background: 'linear-gradient(135deg, #c8c8c8 0%, #DBDBDB 100%)' 
-      }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-          <h2 style={{ 
-            fontSize: 'clamp(2rem, 4vw, 2.5rem)', 
-            fontWeight: 900, 
-            marginBottom: '1.5rem', 
-            color: '#000',
-            letterSpacing: '-0.02em'
-          }}>
-            Environment Governance
-          </h2>
-          <p style={{ 
-            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
-            lineHeight: 1.8, 
-            color: '#333',
-            fontWeight: 600,
-            marginBottom: '1.5rem'
-          }}>
-            Environment governance establishes clarity around the firm's digital estate.
-          </p>
-          <p style={{ 
-            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
-            lineHeight: 1.8, 
-            color: '#333',
-            fontWeight: 600,
-            marginBottom: '1.5rem'
-          }}>
-            This service defines which systems are recognized as part of legal operations, which identities are authorized to act, where client and matter data is permitted to reside, and which vendors and integrations are allowed to connect.
-          </p>
-          <p style={{ 
-            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
-            lineHeight: 1.8, 
-            color: '#333',
-            fontWeight: 600,
-            marginBottom: '1.5rem'
-          }}>
-            By establishing clear boundaries, the firm reduces unmanaged system sprawl, informal access paths, and uncertainty around where legal work actually occurs.
-          </p>
-          <p style={{ 
-            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
-            lineHeight: 1.8, 
-            color: '#333',
-            fontWeight: 600
-          }}>
-            Environment governance allows leadership to understand, with precision, what exists inside the firm's operational footprint and how changes to that environment are controlled.
-          </p>
-        </div>
-      </section>
-
-      {/* Workflow Governance */}
-      <section style={{ 
-        padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
-        background: '#DBDBDB' 
-      }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-          <h2 style={{ 
-            fontSize: 'clamp(2rem, 4vw, 2.5rem)', 
-            fontWeight: 900, 
-            marginBottom: '1.5rem', 
-            color: '#000',
-            letterSpacing: '-0.02em'
-          }}>
-            Workflow Governance
-          </h2>
-          <p style={{ 
-            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
-            lineHeight: 1.8, 
-            color: '#333',
-            fontWeight: 600,
-            marginBottom: '1.5rem'
-          }}>
-            Workflow governance focuses on how legal work moves from intake through resolution across people, systems, and documents.
-          </p>
-          <p style={{ 
-            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
-            lineHeight: 1.8, 
-            color: '#333',
-            fontWeight: 600,
-            marginBottom: '1.5rem'
-          }}>
-            This service governs who is allowed to act at each stage of a matter, what approvals are required before execution, and how those approvals are preserved when system actions occur. Governance is applied to document finalization, discovery and production decisions, billing adjustments, access changes, and other actions that carry legal or financial consequence.
-          </p>
-          <p style={{ 
-            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
-            lineHeight: 1.8, 
-            color: '#333',
-            fontWeight: 600
-          }}>
-            Legal work continues using the same tools and platforms. What changes is that execution is no longer driven by assumption or informal communication. System actions occur in a controlled, traceable manner that preserves authority at the moment execution takes place.
-          </p>
-        </div>
-      </section>
-
-      {/* Ongoing Governance */}
-      <section style={{ 
-        padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
-        background: 'linear-gradient(135deg, #c8c8c8 0%, #DBDBDB 100%)' 
-      }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-          <h2 style={{ 
-            fontSize: 'clamp(2rem, 4vw, 2.5rem)', 
-            fontWeight: 900, 
-            marginBottom: '1.5rem', 
-            color: '#000',
-            letterSpacing: '-0.02em'
-          }}>
-            Ongoing Governance
-          </h2>
-          <p style={{ 
-            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
-            lineHeight: 1.8, 
-            color: '#333',
-            fontWeight: 600,
-            marginBottom: '1.5rem'
-          }}>
-            Governance oversight maintains execution discipline as the firm evolves.
-          </p>
-          <p style={{ 
-            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
-            lineHeight: 1.8, 
-            color: '#333',
-            fontWeight: 600,
-            marginBottom: '1.5rem'
-          }}>
-            As new tools are introduced, vendors are added, workflows change, and personnel move into new roles, execution risk can reappear if controls are not maintained.
-          </p>
-          <p style={{ 
-            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
-            lineHeight: 1.8, 
-            color: '#333',
-            fontWeight: 600
-          }}>
-            Ongoing governance oversight ensures that authority controls remain intact and that changes to the environment do not reintroduce unmanaged execution. This service supports long-term consistency, operational clarity, and defensibility without requiring repeated corrective efforts.
-          </p>
-        </div>
-      </section>
-
-      {/* Private Firm Intelligence */}
-      <section style={{ 
-        padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
-        background: '#DBDBDB' 
-      }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-          <h2 style={{ 
-            fontSize: 'clamp(2rem, 4vw, 2.5rem)', 
-            fontWeight: 900, 
-            marginBottom: '1.5rem', 
-            color: '#000',
-            letterSpacing: '-0.02em'
-          }}>
-            Private Firm Intelligence
-          </h2>
-          <p style={{ 
-            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
-            lineHeight: 1.8, 
-            color: '#333',
-            fontWeight: 600,
-            marginBottom: '1.5rem'
-          }}>
-            Private firm intelligence provides advanced knowledge access and drafting assistance using the firm's own work product, language, and internal data.
-          </p>
-          <p style={{ 
-            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
-            lineHeight: 1.8, 
-            color: '#333',
-            fontWeight: 600,
-            marginBottom: '1.5rem'
-          }}>
-            This service enables retrieval of prior filings, documents, and internal knowledge while preserving confidentiality and control. Because the intelligence capability operates entirely within the firm's governed environment, it relies only on approved and final artifacts and does not introduce data exposure or ambiguity.
-          </p>
-          <p style={{ 
-            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
-            lineHeight: 1.8, 
-            color: '#333',
-            fontWeight: 600
-          }}>
-            Private firm intelligence enhances efficiency while preserving the integrity of legal work.
-          </p>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section style={{ 
-        padding: 'clamp(5rem, 10vw, 8rem) clamp(1.5rem, 5vw, 2.5rem)', 
-        background: 'linear-gradient(135deg, #c8c8c8 0%, #DBDBDB 100%)' 
-      }}>
-        <div style={{ maxWidth: '700px', margin: '0 auto' }}>
-          <div style={{
-            background: 'linear-gradient(180deg, #000000 0%, #061018 100%)',
-            borderRadius: '16px',
-            padding: 'clamp(3rem, 6vw, 4.5rem) clamp(2rem, 5vw, 3.5rem)',
-            textAlign: 'center',
-            boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
-            position: 'relative',
-            overflow: 'hidden'
-          }}>
-            <div style={{
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              opacity: 0.02,
-              backgroundImage: 'repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)',
-              backgroundSize: '20px 20px'
-            }} />
-            <div style={{ position: 'relative', zIndex: 1 }}>
-              <h2 style={{ 
-                fontSize: 'clamp(1.75rem, 4vw, 2.25rem)', 
-                fontWeight: 900, 
-                marginBottom: '1.25rem',
-                letterSpacing: '-0.02em',
-                color: '#fff'
-              }}>
-                Ready to Establish Governance?
-              </h2>
-              <p style={{ 
-                fontSize: 'clamp(1rem, 2vw, 1.15rem)', 
-                marginBottom: 'clamp(2rem, 4vw, 2.5rem)', 
-                color: '#b0b0b0',
-                lineHeight: 1.6,
-                fontWeight: 500
-              }}>
-                Schedule a governance examination to determine if your firm meets the requirements
-              </p>
-              <a 
-                href="https://calendly.com/jfreeman-yavardi/yavardi-governance-examination"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: 'inline-block',
-                  background: '#DBDBDB',
-                  color: '#000',
-                  padding: 'clamp(0.875rem, 2vw, 1rem) clamp(2rem, 4vw, 2.5rem)',
-                  borderRadius: '6px',
-                  textDecoration: 'none',
-                  fontWeight: 700,
-                  fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)',
-                  transition: 'all 0.2s ease',
-                  border: 'none',
-                  cursor: 'pointer'
-                }}
-              >
-                Schedule Examination
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
-  );
-
-  const DominionPage = () => (
-    <>
-      {/* Hero */}
-      <section style={{
-        minHeight: '40vh',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        background: '#000000',
-        position: 'relative',
-        overflow: 'hidden',
-        padding: 'clamp(5rem, 8vw, 6rem) 1.5rem clamp(2.5rem, 4vw, 3.5rem)'
-      }}>
-        <div style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          opacity: 0.04,
-          backgroundImage: 'repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)',
-          backgroundSize: '12px 12px'
-        }} />
-        
-        <div style={{ 
-          maxWidth: '900px', 
-          margin: '0 auto', 
-          textAlign: 'center', 
-          position: 'relative', 
-          zIndex: 1
-        }}>
-          <h1 style={{ 
-            fontSize: 'clamp(2.5rem, 6vw, 3.5rem)', 
-            fontWeight: 900, 
-            marginBottom: '2rem', 
-            color: '#FFFFFF',
-            lineHeight: 1.2,
-            letterSpacing: '-0.02em'
-          }}>
-            The Dominion Platform
-          </h1>
-          
-          <p style={{
-            fontSize: 'clamp(1.1rem, 2.5vw, 1.35rem)',
-            lineHeight: 1.7,
-            color: 'rgba(255, 255, 255, 0.8)',
-            fontWeight: 600,
-            maxWidth: '750px',
-            margin: '0 auto'
-          }}>
-            Authority capture infrastructure for law firms. Dominion deploys within your Microsoft environment to bind approval to execution at the system level.
-          </p>
-        </div>
-      </section>
-
-      {/* Platform Overview */}
-      <section style={{ 
-        padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
-        background: '#DBDBDB' 
-      }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-          <h2 style={{ 
-            fontSize: 'clamp(2rem, 4vw, 2.5rem)', 
-            fontWeight: 900, 
-            marginBottom: '1.5rem', 
-            color: '#000',
             letterSpacing: '-0.02em',
-            textAlign: 'center'
+            color: '#fff'
           }}>
-            Platform Architecture
+            The Problem: Authority Gaps
           </h2>
           
           <p style={{ 
             fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
             lineHeight: 1.8, 
-            color: '#333',
-            fontWeight: 600,
-            marginBottom: '3rem',
-            textAlign: 'center'
+            color: '#b0b0b0', 
+            marginBottom: '1.5rem',
+            fontWeight: 500
           }}>
-            Dominion operates in three tiers. Each tier builds on the foundation established by the one before it.
+            When a scope change, billing adjustment, or other consequential action occurs, approval happens informally—through conversation, email, or Teams message. Work proceeds. Authority is assumed.
           </p>
           
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-            {/* Tier 1 */}
-            <div style={{
-              background: '#e8e8e8',
-              padding: 'clamp(2rem, 4vw, 2.5rem)',
-              borderRadius: '4px',
-              borderLeft: '4px solid #000'
-            }}>
-              <h3 style={{
-                fontSize: 'clamp(1.3rem, 3vw, 1.5rem)',
-                fontWeight: 900,
-                color: '#000',
-                marginBottom: '1rem'
-              }}>
-                Tier 1: Environment Governance
-              </h3>
-              <p style={{
-                fontSize: 'clamp(1rem, 2vw, 1.15rem)',
-                lineHeight: 1.8,
-                color: '#333',
-                fontWeight: 600,
-                marginBottom: '1rem'
-              }}>
-                Establishes the boundaries of the firm's digital estate. Defines which systems are authorized, which identities can act, where data is permitted to reside, and which integrations are allowed.
-              </p>
-              <p style={{
-                fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)',
-                color: '#666',
-                fontWeight: 600,
-                fontStyle: 'italic'
-              }}>
-                Every engagement begins here. This is the foundation.
-              </p>
-            </div>
-            
-            {/* Tier 2 */}
-            <div style={{
-              background: '#e8e8e8',
-              padding: 'clamp(2rem, 4vw, 2.5rem)',
-              borderRadius: '4px',
-              borderLeft: '4px solid #000'
-            }}>
-              <h3 style={{
-                fontSize: 'clamp(1.3rem, 3vw, 1.5rem)',
-                fontWeight: 900,
-                color: '#000',
-                marginBottom: '1rem'
-              }}>
-                Tier 2: Workflow Governance
-              </h3>
-              <p style={{
-                fontSize: 'clamp(1rem, 2vw, 1.15rem)',
-                lineHeight: 1.8,
-                color: '#333',
-                fontWeight: 600,
-                marginBottom: '1rem'
-              }}>
-                Binds authority to execution across billing, documents, and matter flow. Ensures that legally consequential actions are recorded with the identity of the approver at the moment execution occurs.
-              </p>
-              <p style={{
-                fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)',
-                color: '#666',
-                fontWeight: 600,
-                fontStyle: 'italic'
-              }}>
-                This is where Reconstruction Tax gets eliminated.
-              </p>
-            </div>
-            
-            {/* Tier 3 */}
-            <div style={{
-              background: '#e8e8e8',
-              padding: 'clamp(2rem, 4vw, 2.5rem)',
-              borderRadius: '4px',
-              borderLeft: '4px solid #000'
-            }}>
-              <h3 style={{
-                fontSize: 'clamp(1.3rem, 3vw, 1.5rem)',
-                fontWeight: 900,
-                color: '#000',
-                marginBottom: '1rem'
-              }}>
-                Tier 3: Intelligence Layer
-              </h3>
-              <p style={{
-                fontSize: 'clamp(1rem, 2vw, 1.15rem)',
-                lineHeight: 1.8,
-                color: '#333',
-                fontWeight: 600,
-                marginBottom: '1rem'
-              }}>
-                Provides knowledge access and drafting assistance using only approved and final firm artifacts. Operates entirely within the governed environment with no external data exposure.
-              </p>
-              <p style={{
-                fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)',
-                color: '#666',
-                fontWeight: 600,
-                fontStyle: 'italic'
-              }}>
-                Optional. Available only after Tier 1 and Tier 2 are in place.
-              </p>
-            </div>
-          </div>
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#b0b0b0', 
+            marginBottom: '1.5rem',
+            fontWeight: 500
+          }}>
+            Months later, during billing review, the partner is asked: Who approved this change? When? Under what authority?
+          </p>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#fff', 
+            marginBottom: '1.5rem',
+            fontWeight: 700
+          }}>
+            No record exists.
+          </p>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#b0b0b0', 
+            marginBottom: '1.5rem',
+            fontWeight: 500
+          }}>
+            The partner absorbs the loss. A senior attorney reconstructs the decision from email fragments. The firm pays the Reconstruction Tax.
+          </p>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#fff', 
+            fontWeight: 700
+          }}>
+            Dominion eliminates this gap by capturing authority at the moment execution occurs.
+          </p>
         </div>
       </section>
 
-      {/* How It Works */}
+      {/* How Authority Capture Works */}
       <section style={{ 
         padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
-        background: '#000000',
-        position: 'relative'
+        background: '#DBDBDB'
       }}>
-        <div style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          opacity: 0.04,
-          backgroundImage: 'repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)',
-          backgroundSize: '12px 12px'
-        }} />
-        
-        <div style={{ maxWidth: '900px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <h2 style={{ 
-            fontSize: 'clamp(2rem, 4vw, 2.5rem)', 
+            fontSize: 'clamp(1.75rem, 4vw, 2.25rem)', 
             fontWeight: 900, 
-            marginBottom: '1.5rem', 
-            color: '#DBDBDB',
+            marginBottom: '1.5rem',
             letterSpacing: '-0.02em',
-            textAlign: 'center'
+            color: '#000'
           }}>
             How Authority Capture Works
           </h2>
@@ -1513,10 +782,9 @@ export default function YavardiWebsite() {
           <p style={{ 
             fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
             lineHeight: 1.8, 
-            color: '#b0b0b0',
-            fontWeight: 600,
-            marginBottom: '2.5rem',
-            textAlign: 'center'
+            color: '#333', 
+            marginBottom: '2rem',
+            fontWeight: 500
           }}>
             When a scope change, billing adjustment, or other consequential action requires approval, Dominion captures authority in real time.
           </p>
@@ -1579,217 +847,103 @@ export default function YavardiWebsite() {
             </svg>
           </div>
           
+          {/* The Approval Flow */}
           <div style={{
-            background: 'rgba(219, 219, 219, 0.1)',
+            background: 'rgba(0, 0, 0, 0.05)',
             padding: 'clamp(1.5rem, 3vw, 2rem)',
             borderRadius: '4px',
-            borderLeft: '4px solid #DBDBDB'
+            borderLeft: '4px solid #000'
           }}>
             <h3 style={{
               fontSize: 'clamp(1.2rem, 2.5vw, 1.4rem)',
               fontWeight: 900,
-              color: '#DBDBDB',
+              color: '#000',
               marginBottom: '1.25rem'
             }}>
               The Approval Flow
             </h3>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              <p style={{
-                fontSize: 'clamp(1rem, 2vw, 1.1rem)',
-                lineHeight: 1.7,
-                color: '#b0b0b0',
-                fontWeight: 600
-              }}>
-                <strong style={{ color: '#fff' }}>1.</strong> Action requiring authority is initiated (scope change, billing adjustment, etc.)
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+              <p style={{ fontSize: 'clamp(1rem, 2vw, 1.1rem)', lineHeight: 1.7, color: '#333', fontWeight: 500, paddingLeft: '1.5rem', position: 'relative' }}>
+                <span style={{ position: 'absolute', left: 0, fontWeight: 700 }}>1.</span>
+                Action requiring authority is initiated (scope change, billing adjustment, etc.)
               </p>
-              <p style={{
-                fontSize: 'clamp(1rem, 2vw, 1.1rem)',
-                lineHeight: 1.7,
-                color: '#b0b0b0',
-                fontWeight: 600
-              }}>
-                <strong style={{ color: '#fff' }}>2.</strong> Designated approver receives notification with full context
+              <p style={{ fontSize: 'clamp(1rem, 2vw, 1.1rem)', lineHeight: 1.7, color: '#333', fontWeight: 500, paddingLeft: '1.5rem', position: 'relative' }}>
+                <span style={{ position: 'absolute', left: 0, fontWeight: 700 }}>2.</span>
+                Designated approver receives notification with full context
               </p>
-              <p style={{
-                fontSize: 'clamp(1rem, 2vw, 1.1rem)',
-                lineHeight: 1.7,
-                color: '#b0b0b0',
-                fontWeight: 600
-              }}>
-                <strong style={{ color: '#fff' }}>3.</strong> Approver reviews scope and cost impact, approves or declines
+              <p style={{ fontSize: 'clamp(1rem, 2vw, 1.1rem)', lineHeight: 1.7, color: '#333', fontWeight: 500, paddingLeft: '1.5rem', position: 'relative' }}>
+                <span style={{ position: 'absolute', left: 0, fontWeight: 700 }}>3.</span>
+                Approver reviews scope and cost impact, approves or declines
               </p>
-              <p style={{
-                fontSize: 'clamp(1rem, 2vw, 1.1rem)',
-                lineHeight: 1.7,
-                color: '#b0b0b0',
-                fontWeight: 600
-              }}>
-                <strong style={{ color: '#fff' }}>4.</strong> Authority record is created with verified identity, timestamp, and decision
+              <p style={{ fontSize: 'clamp(1rem, 2vw, 1.1rem)', lineHeight: 1.7, color: '#333', fontWeight: 500, paddingLeft: '1.5rem', position: 'relative' }}>
+                <span style={{ position: 'absolute', left: 0, fontWeight: 700 }}>4.</span>
+                Authority record is created with verified identity, timestamp, and decision
               </p>
-              <p style={{
-                fontSize: 'clamp(1rem, 2vw, 1.1rem)',
-                lineHeight: 1.7,
-                color: '#fff',
-                fontWeight: 700
-              }}>
-                <strong>5.</strong> Record is immutable and exportable. Available instantly at billing review.
+              <p style={{ fontSize: 'clamp(1rem, 2vw, 1.1rem)', lineHeight: 1.7, color: '#333', fontWeight: 500, paddingLeft: '1.5rem', position: 'relative' }}>
+                <span style={{ position: 'absolute', left: 0, fontWeight: 700 }}>5.</span>
+                Record is immutable and exportable. Available instantly at billing review.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Before/After Diagram */}
+      {/* Platform Architecture */}
       <section style={{ 
         padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
-        background: '#DBDBDB' 
+        background: 'linear-gradient(180deg, #000 0%, #1a1a1a 100%)',
+        position: 'relative'
       }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          opacity: 0.02,
+          backgroundImage: 'repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)',
+          backgroundSize: '20px 20px'
+        }} />
+        
+        <div style={{ maxWidth: '900px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
           <h2 style={{ 
-            fontSize: 'clamp(2rem, 4vw, 2.5rem)', 
+            fontSize: 'clamp(1.75rem, 4vw, 2.25rem)', 
             fontWeight: 900, 
-            marginBottom: '1.5rem', 
-            color: '#000',
+            marginBottom: '1.5rem',
             letterSpacing: '-0.02em',
-            textAlign: 'center'
+            color: '#fff'
           }}>
-            The Outcome Difference
+            Platform Architecture
           </h2>
           
           <p style={{ 
             fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
             lineHeight: 1.8, 
-            color: '#333',
-            fontWeight: 600,
+            color: '#b0b0b0', 
             marginBottom: '2.5rem',
-            textAlign: 'center',
-            maxWidth: '800px',
-            margin: '0 auto 2.5rem'
+            fontWeight: 500
           }}>
-            The same scope change. Two different outcomes. The only variable is whether authority was captured at execution time.
+            Dominion operates in three tiers. Each tier builds on the foundation established by the one before it.
           </p>
           
-          <div style={{
-            background: '#DBDBDB',
-            borderRadius: '8px',
-            overflow: 'hidden'
-          }}>
-            <svg width="100%" viewBox="0 0 1800 1400" xmlns="http://www.w3.org/2000/svg" style={{ display: 'block' }}>
-              <defs>
-                <linearGradient id="gradLeftBox2b" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stopColor="#F8B461" stopOpacity="1" />
-                  <stop offset="100%" stopColor="#E89A47" stopOpacity="1" />
-                </linearGradient>
-                <linearGradient id="gradLeftBox3b" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stopColor="#E85D47" stopOpacity="1" />
-                  <stop offset="100%" stopColor="#D63C2F" stopOpacity="1" />
-                </linearGradient>
-                <linearGradient id="gradLeftBox4b" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stopColor="#C0392B" stopOpacity="1" />
-                  <stop offset="100%" stopColor="#8B0000" stopOpacity="1" />
-                </linearGradient>
-                <linearGradient id="gradLeftBox5b" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stopColor="#8B0000" stopOpacity="1" />
-                  <stop offset="100%" stopColor="#5C0000" stopOpacity="1" />
-                </linearGradient>
-                <linearGradient id="gradRightBox2b" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stopColor="#B8E4C8" stopOpacity="1" />
-                  <stop offset="100%" stopColor="#95D5A8" stopOpacity="1" />
-                </linearGradient>
-                <linearGradient id="gradRightBox3b" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stopColor="#52B788" stopOpacity="1" />
-                  <stop offset="100%" stopColor="#3D9E71" stopOpacity="1" />
-                </linearGradient>
-                <linearGradient id="gradRightBox4b" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stopColor="#2D6A4F" stopOpacity="1" />
-                  <stop offset="100%" stopColor="#1F4D37" stopOpacity="1" />
-                </linearGradient>
-                <linearGradient id="gradRightBox5b" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stopColor="#1B4332" stopOpacity="1" />
-                  <stop offset="100%" stopColor="#0B3620" stopOpacity="1" />
-                </linearGradient>
-                <filter id="shadowb" x="-50%" y="-50%" width="200%" height="200%">
-                  <feDropShadow dx="0" dy="4" stdDeviation="6" floodOpacity="0.25" floodColor="#000000"/>
-                </filter>
-              </defs>
-              <rect width="1800" height="1400" fill="#dbdbdb"/>
-              <text x="400" y="55" textAnchor="middle" fontSize="26" fontWeight="700" fill="#000000">Before Dominion</text>
-              <text x="400" y="85" textAnchor="middle" fontSize="16" fontWeight="400" fill="#000000">(Status Quo)</text>
-              <text x="1400" y="55" textAnchor="middle" fontSize="26" fontWeight="700" fill="#000000">After Dominion</text>
-              <text x="1400" y="85" textAnchor="middle" fontSize="16" fontWeight="400" fill="#000000">(With Authority Capture)</text>
-              <line x1="900" y1="120" x2="900" y2="1250" stroke="#B8B8B8" strokeWidth="1" strokeDasharray="8,8"/>
-              <rect x="80" y="130" width="640" height="100" rx="8" ry="8" fill="#F5F5F5" stroke="#DCDCDC" strokeWidth="1" filter="url(#shadowb)"/>
-              <text x="400" y="165" textAnchor="middle" fontSize="18" fontWeight="700" fill="#000000">Scope Change Occurs</text>
-              <text x="400" y="195" textAnchor="middle" fontSize="14" fontWeight="600" fill="#000000">Additional custodians identified, discovery expands</text>
-              <line x1="400" y1="230" x2="400" y2="255" stroke="#999999" strokeWidth="2"/>
-              <polygon points="400,265 395,255 405,255" fill="#999999"/>
-              <text x="400" y="295" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">No formal capture</text>
-              <rect x="80" y="305" width="640" height="170" rx="8" ry="8" fill="url(#gradLeftBox2b)" filter="url(#shadowb)"/>
-              <text x="400" y="360" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Work Proceeds Without Authority Record</text>
-              <text x="400" y="390" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Paralegal records time. Associates bill hours.</text>
-              <text x="400" y="412" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Partners approve informally via in-person conversations,</text>
-              <text x="400" y="434" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Teams, or email. No formal record exists.</text>
-              <line x1="400" y1="475" x2="400" y2="500" stroke="#E89A47" strokeWidth="2"/>
-              <polygon points="400,510 395,500 405,500" fill="#E89A47"/>
-              <text x="400" y="540" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Months pass</text>
-              <rect x="80" y="560" width="640" height="170" rx="8" ry="8" fill="url(#gradLeftBox3b)" filter="url(#shadowb)"/>
-              <text x="400" y="600" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Billing Review Questions Charges</text>
-              <text x="400" y="635" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Partner cannot prove scope was approved.</text>
-              <text x="400" y="657" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Charges are indefensible.</text>
-              <text x="400" y="690" textAnchor="middle" fontSize="19" fontWeight="700" fill="#FFD166">Over $250,000 written down</text>
-              <line x1="400" y1="730" x2="400" y2="755" stroke="#D63C2F" strokeWidth="2"/>
-              <polygon points="400,765 395,755 405,755" fill="#D63C2F"/>
-              <text x="400" y="805" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Escalation</text>
-              <rect x="80" y="825" width="640" height="170" rx="8" ry="8" fill="url(#gradLeftBox4b)" filter="url(#shadowb)"/>
-              <text x="400" y="860" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Senior Attorney Reconstructs Approval</text>
-              <text x="400" y="895" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">15+ hours searching emails, chats, files</text>
-              <text x="400" y="917" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">trying to establish decision trail.</text>
-              <text x="400" y="950" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">No proof exists.</text>
-              <line x1="400" y1="995" x2="400" y2="1020" stroke="#8B0000" strokeWidth="2"/>
-              <polygon points="400,1030 395,1020 405,1020" fill="#8B0000"/>
-              <text x="400" y="1070" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Revenue loss</text>
-              <rect x="80" y="1090" width="640" height="170" rx="8" ry="8" fill="url(#gradLeftBox5b)" filter="url(#shadowb)"/>
-              <text x="400" y="1120" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Reconstruction Tax Paid</text>
-              <text x="400" y="1160" textAnchor="middle" fontSize="24" fontWeight="700" fill="#FFD166">Over $1.5 million annually</text>
-              <text x="400" y="1200" textAnchor="middle" fontSize="13" fontWeight="600" fill="#FFFFFF">Conservative floor for mid-sized firm</text>
-              <text x="400" y="1228" textAnchor="middle" fontSize="12" fontWeight="500" fill="#FFFFFF">Authority-driven losses accumulate invisibly</text>
-              <rect x="1080" y="130" width="640" height="100" rx="8" ry="8" fill="#F5F5F5" stroke="#DCDCDC" strokeWidth="1" filter="url(#shadowb)"/>
-              <text x="1400" y="165" textAnchor="middle" fontSize="18" fontWeight="700" fill="#000000">Scope Change Occurs</text>
-              <text x="1400" y="195" textAnchor="middle" fontSize="14" fontWeight="600" fill="#000000">Additional custodians identified, discovery expands</text>
-              <line x1="1400" y1="230" x2="1400" y2="255" stroke="#52B788" strokeWidth="2"/>
-              <polygon points="1400,265 1395,255 1405,255" fill="#52B788"/>
-              <text x="1400" y="295" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Authority requested</text>
-              <rect x="1080" y="305" width="640" height="190" rx="8" ry="8" fill="url(#gradRightBox2b)" filter="url(#shadowb)"/>
-              <text x="1400" y="340" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Approval Captured in Real Time ✓</text>
-              <text x="1400" y="370" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Approver is notified approval is needed.</text>
-              <text x="1400" y="392" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Approver clicks approval link. Reviews scope and cost.</text>
-              <text x="1400" y="414" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Approves or declines in 20 seconds.</text>
-              <text x="1400" y="450" textAnchor="middle" fontSize="13" fontWeight="700" fill="#FFFFFF">AUTH-2025-00142 generated</text>
-              <line x1="1400" y1="495" x2="1400" y2="520" stroke="#52B788" strokeWidth="2"/>
-              <polygon points="1400,530 1395,520 1405,520" fill="#52B788"/>
-              <text x="1400" y="565" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Record exists</text>
-              <rect x="1080" y="590" width="640" height="170" rx="8" ry="8" fill="url(#gradRightBox3b)" filter="url(#shadowb)"/>
-              <text x="1400" y="620" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Billing Review Pulls Authority Record</text>
-              <text x="1400" y="655" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Partner pulls AUTH-2025-00142 instantly.</text>
-              <text x="1400" y="677" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Complete approval packet available: who, when, what.</text>
-              <text x="1400" y="715" textAnchor="middle" fontSize="14" fontWeight="700" fill="#FFFFFF">Defensibility is certain.</text>
-              <line x1="1400" y1="760" x2="1400" y2="785" stroke="#3D9E71" strokeWidth="2"/>
-              <polygon points="1400,795 1395,785 1405,785" fill="#3D9E71"/>
-              <text x="1400" y="830" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Zero reconstruction</text>
-              <rect x="1080" y="855" width="640" height="170" rx="8" ry="8" fill="url(#gradRightBox4b)" filter="url(#shadowb)"/>
-              <text x="1400" y="885" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Zero Reconstruction Labor</text>
-              <text x="1400" y="920" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">No searching. No email mining. No uncertainty.</text>
-              <text x="1400" y="942" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Authority is immutable and exportable.</text>
-              <text x="1400" y="975" textAnchor="middle" fontSize="14" fontWeight="600" fill="#FFFFFF">Senior time stays on revenue work.</text>
-              <line x1="1400" y1="1025" x2="1400" y2="1050" stroke="#1F4D37" strokeWidth="2"/>
-              <polygon points="1400,1060 1395,1050 1405,1050" fill="#1F4D37"/>
-              <text x="1400" y="1100" textAnchor="middle" fontSize="15" fontWeight="700" fill="#000000">Revenue protected</text>
-              <rect x="1080" y="1130" width="640" height="170" rx="8" ry="8" fill="url(#gradRightBox5b)" filter="url(#shadowb)"/>
-              <text x="1400" y="1160" textAnchor="middle" fontSize="18" fontWeight="700" fill="#FFFFFF">Reconstruction Tax Eliminated</text>
-              <text x="1400" y="1205" textAnchor="middle" fontSize="24" fontWeight="700" fill="#B7E4C7">$280,000–$320,000 recovered annually</text>
-              <text x="1400" y="1245" textAnchor="middle" fontSize="13" fontWeight="600" fill="#FFFFFF">Realistic recovery from authority-driven gaps</text>
-              <text x="1400" y="1273" textAnchor="middle" fontSize="12" fontWeight="500" fill="#FFFFFF">Revenue and capacity protected going forward</text>
-            </svg>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+            <div style={{ background: 'rgba(255, 255, 255, 0.05)', padding: 'clamp(1.5rem, 3vw, 2rem)', borderRadius: '4px', borderLeft: '4px solid rgba(219, 219, 219, 0.4)' }}>
+              <h3 style={{ fontSize: 'clamp(1.2rem, 2.5vw, 1.4rem)', fontWeight: 900, color: '#fff', marginBottom: '1rem' }}>Tier 1: Environment Governance</h3>
+              <p style={{ fontSize: 'clamp(1rem, 2vw, 1.1rem)', lineHeight: 1.7, color: '#b0b0b0', fontWeight: 500, marginBottom: '0.75rem' }}>Establishes the boundaries of the firm's digital estate. Defines which systems are authorized, which identities can act, where data is permitted to reside, and which integrations are allowed.</p>
+              <p style={{ fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)', lineHeight: 1.7, color: '#fff', fontWeight: 700, fontStyle: 'italic' }}>Every engagement begins here. This is the foundation.</p>
+            </div>
+            
+            <div style={{ background: 'rgba(255, 255, 255, 0.05)', padding: 'clamp(1.5rem, 3vw, 2rem)', borderRadius: '4px', borderLeft: '4px solid rgba(219, 219, 219, 0.4)' }}>
+              <h3 style={{ fontSize: 'clamp(1.2rem, 2.5vw, 1.4rem)', fontWeight: 900, color: '#fff', marginBottom: '1rem' }}>Tier 2: Workflow Governance</h3>
+              <p style={{ fontSize: 'clamp(1rem, 2vw, 1.1rem)', lineHeight: 1.7, color: '#b0b0b0', fontWeight: 500, marginBottom: '0.75rem' }}>Binds authority to execution across billing, documents, and matter flow. Ensures that legally consequential actions are recorded with the identity of the approver at the moment execution occurs.</p>
+              <p style={{ fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)', lineHeight: 1.7, color: '#fff', fontWeight: 700, fontStyle: 'italic' }}>This is where Reconstruction Tax gets eliminated.</p>
+            </div>
+            
+            <div style={{ background: 'rgba(255, 255, 255, 0.05)', padding: 'clamp(1.5rem, 3vw, 2rem)', borderRadius: '4px', borderLeft: '4px solid rgba(219, 219, 219, 0.4)' }}>
+              <h3 style={{ fontSize: 'clamp(1.2rem, 2.5vw, 1.4rem)', fontWeight: 900, color: '#fff', marginBottom: '1rem' }}>Tier 3: Intelligence Layer</h3>
+              <p style={{ fontSize: 'clamp(1rem, 2vw, 1.1rem)', lineHeight: 1.7, color: '#b0b0b0', fontWeight: 500, marginBottom: '0.75rem' }}>Provides knowledge access and drafting assistance using only approved and final firm artifacts. Operates entirely within the governed environment with no external data exposure.</p>
+              <p style={{ fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)', lineHeight: 1.7, color: '#fff', fontWeight: 700, fontStyle: 'italic' }}>Optional. Available only after Tier 1 and Tier 2 are in place.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -1797,11 +951,11 @@ export default function YavardiWebsite() {
       {/* How Dominion Deploys */}
       <section style={{ 
         padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
-        background: 'linear-gradient(135deg, #c8c8c8 0%, #DBDBDB 100%)' 
+        background: '#DBDBDB'
       }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <h2 style={{ 
-            fontSize: 'clamp(2rem, 4vw, 2.5rem)', 
+            fontSize: 'clamp(1.75rem, 4vw, 2.25rem)', 
             fontWeight: 900, 
             marginBottom: '1.5rem', 
             color: '#000',
@@ -1823,144 +977,123 @@ export default function YavardiWebsite() {
           </p>
           
           {/* Top row - 3 items */}
-          <div style={{ 
-            display: 'grid', 
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: '1.5rem',
-            marginBottom: '1.5rem'
-          }}>
-            {[
-              {
-                title: 'Identity Binding',
-                description: 'Every authority action is tied to a verified individual. No anonymous approvals. No shared credentials.'
-              },
-              {
-                title: 'Controlled Execution',
-                description: 'Consequential actions occur only from authorized access points within the governed environment.'
-              },
-              {
-                title: 'Automated Routing',
-                description: 'Approval requests flow to the right authority. Notifications trigger automatically. Records generate on execution.'
-              }
-            ].map((item, i) => (
-              <div key={i} style={{
-                background: '#e8e8e8',
-                padding: 'clamp(1.5rem, 3vw, 2rem)',
-                borderRadius: '4px',
-                border: '1px solid #c8c8c8'
-              }}>
-                <h3 style={{ 
-                  fontSize: 'clamp(1.1rem, 2.5vw, 1.25rem)', 
-                  fontWeight: 900, 
-                  marginBottom: '0.75rem', 
-                  color: '#000'
-                }}>{item.title}</h3>
-                <p style={{ 
-                  color: '#333', 
-                  lineHeight: 1.7,
-                  fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)',
-                  fontWeight: 600
-                }}>{item.description}</p>
-              </div>
-            ))}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem', marginBottom: '1.5rem' }}>
+            <div style={{ background: '#e8e8e8', padding: 'clamp(1.5rem, 3vw, 2rem)', borderRadius: '4px', border: '1px solid #c8c8c8' }}>
+              <h3 style={{ fontSize: 'clamp(1.1rem, 2.5vw, 1.25rem)', fontWeight: 900, marginBottom: '0.75rem', color: '#000' }}>Identity Binding</h3>
+              <p style={{ color: '#333', lineHeight: 1.7, fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)', fontWeight: 600 }}>Every authority action is tied to a verified individual. No anonymous approvals. No shared credentials.</p>
+            </div>
+            <div style={{ background: '#e8e8e8', padding: 'clamp(1.5rem, 3vw, 2rem)', borderRadius: '4px', border: '1px solid #c8c8c8' }}>
+              <h3 style={{ fontSize: 'clamp(1.1rem, 2.5vw, 1.25rem)', fontWeight: 900, marginBottom: '0.75rem', color: '#000' }}>Controlled Execution</h3>
+              <p style={{ color: '#333', lineHeight: 1.7, fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)', fontWeight: 600 }}>Consequential actions occur only from authorized access points within the governed environment.</p>
+            </div>
+            <div style={{ background: '#e8e8e8', padding: 'clamp(1.5rem, 3vw, 2rem)', borderRadius: '4px', border: '1px solid #c8c8c8' }}>
+              <h3 style={{ fontSize: 'clamp(1.1rem, 2.5vw, 1.25rem)', fontWeight: 900, marginBottom: '0.75rem', color: '#000' }}>Automated Routing</h3>
+              <p style={{ color: '#333', lineHeight: 1.7, fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)', fontWeight: 600 }}>Approval requests flow to the right authority. Notifications trigger automatically. Records generate on execution.</p>
+            </div>
           </div>
           
           {/* Bottom row - 1 centered item */}
-          <div style={{ 
-            display: 'flex',
-            justifyContent: 'center'
-          }}>
-            <div style={{
-              background: '#e8e8e8',
-              padding: 'clamp(1.5rem, 3vw, 2rem)',
-              borderRadius: '4px',
-              border: '1px solid #c8c8c8',
-              width: 'calc(33.333% - 1rem)',
-              minWidth: '250px'
-            }}>
-              <h3 style={{ 
-                fontSize: 'clamp(1.1rem, 2.5vw, 1.25rem)', 
-                fontWeight: 900, 
-                marginBottom: '0.75rem', 
-                color: '#000'
-              }}>Governance Visibility</h3>
-              <p style={{ 
-                color: '#333', 
-                lineHeight: 1.7,
-                fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)',
-                fontWeight: 600
-              }}>Leadership maintains oversight across the firm. Authority gaps surface before they become write-downs.</p>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <div style={{ background: '#e8e8e8', padding: 'clamp(1.5rem, 3vw, 2rem)', borderRadius: '4px', border: '1px solid #c8c8c8', width: 'calc(33.333% - 1rem)', minWidth: '250px' }}>
+              <h3 style={{ fontSize: 'clamp(1.1rem, 2.5vw, 1.25rem)', fontWeight: 900, marginBottom: '0.75rem', color: '#000' }}>Governance Visibility</h3>
+              <p style={{ color: '#333', lineHeight: 1.7, fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)', fontWeight: 600 }}>Leadership maintains oversight across the firm. Authority gaps surface before they become write-downs.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Ongoing Governance */}
       <section style={{ 
-        padding: 'clamp(5rem, 10vw, 8rem) clamp(1.5rem, 5vw, 2.5rem)', 
-        background: '#DBDBDB' 
+        padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
+        background: 'linear-gradient(135deg, #c8c8c8 0%, #DBDBDB 100%)' 
       }}>
-        <div style={{ maxWidth: '700px', margin: '0 auto' }}>
-          <div style={{
-            background: 'linear-gradient(180deg, #000000 0%, #061018 100%)',
-            borderRadius: '16px',
-            padding: 'clamp(3rem, 6vw, 4.5rem) clamp(2rem, 5vw, 3.5rem)',
-            textAlign: 'center',
-            boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
-            position: 'relative',
-            overflow: 'hidden'
+        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+          <h2 style={{ 
+            fontSize: 'clamp(1.75rem, 4vw, 2.25rem)', 
+            fontWeight: 900, 
+            marginBottom: '1.5rem',
+            letterSpacing: '-0.02em',
+            color: '#000'
           }}>
-            <div style={{
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              opacity: 0.02,
-              backgroundImage: 'repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)',
-              backgroundSize: '20px 20px'
-            }} />
-            <div style={{ position: 'relative', zIndex: 1 }}>
-              <h2 style={{ 
-                fontSize: 'clamp(1.75rem, 4vw, 2.25rem)', 
-                fontWeight: 900, 
-                marginBottom: '1.25rem',
-                letterSpacing: '-0.02em',
-                color: '#fff'
-              }}>
-                See Dominion in Action
-              </h2>
-              <p style={{ 
-                fontSize: 'clamp(1rem, 2vw, 1.15rem)', 
-                marginBottom: 'clamp(2rem, 4vw, 2.5rem)', 
-                color: '#b0b0b0',
-                lineHeight: 1.6,
-                fontWeight: 500
-              }}>
-                Schedule a governance examination to determine if Dominion is right for your firm
-              </p>
-              <a 
-                href="https://calendly.com/jfreeman-yavardi/yavardi-governance-examination"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: 'inline-block',
-                  background: '#DBDBDB',
-                  color: '#000',
-                  padding: 'clamp(0.875rem, 2vw, 1rem) clamp(2rem, 4vw, 2.5rem)',
-                  borderRadius: '6px',
-                  textDecoration: 'none',
-                  fontWeight: 700,
-                  fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)',
-                  transition: 'all 0.2s ease',
-                  border: 'none',
-                  cursor: 'pointer'
-                }}
-              >
-                Schedule Governance Examination
-              </a>
-            </div>
-          </div>
+            Ongoing Governance
+          </h2>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#333', 
+            marginBottom: '1.5rem',
+            fontWeight: 600
+          }}>
+            Governance oversight maintains execution discipline as the firm evolves.
+          </p>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#333', 
+            marginBottom: '1.5rem',
+            fontWeight: 500
+          }}>
+            As new tools are introduced, vendors are added, workflows change, and personnel move into new roles, execution risk can reappear if controls are not maintained.
+          </p>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#000', 
+            fontWeight: 700
+          }}>
+            Ongoing governance oversight ensures that authority controls remain intact and that changes to the environment do not reintroduce unmanaged execution.
+          </p>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section style={{ 
+        padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 2.5rem)', 
+        background: '#DBDBDB'
+      }}>
+        <div style={{ maxWidth: '700px', margin: '0 auto', textAlign: 'center' }}>
+          <h2 style={{ 
+            fontSize: 'clamp(1.75rem, 4vw, 2.25rem)', 
+            fontWeight: 900, 
+            marginBottom: '1.5rem',
+            letterSpacing: '-0.02em',
+            color: '#000'
+          }}>
+            Ready to Establish Governance?
+          </h2>
+          
+          <p style={{ 
+            fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', 
+            lineHeight: 1.8, 
+            color: '#333', 
+            marginBottom: '2rem',
+            fontWeight: 500
+          }}>
+            Schedule a governance examination to determine if your firm meets the requirements.
+          </p>
+          
+          <a 
+            href="https://calendly.com/jfreeman-yavardi/yavardi-governance-examination"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-block',
+              background: '#000000',
+              color: '#fff',
+              padding: 'clamp(0.875rem, 2vw, 1rem) clamp(1.75rem, 4vw, 2.5rem)',
+              borderRadius: '3px',
+              textDecoration: 'none',
+              fontWeight: 700,
+              fontSize: 'clamp(1rem, 2vw, 1.1rem)',
+              border: 'none',
+              cursor: 'pointer'
+            }}
+          >
+            Schedule Examination
+          </a>
         </div>
       </section>
     </>
@@ -2508,20 +1641,6 @@ export default function YavardiWebsite() {
               Services
             </a>
             <a 
-              onClick={() => navigateTo('dominion')}
-              style={{ 
-                color: '#000', 
-                textDecoration: 'none', 
-                fontWeight: 500, 
-                fontSize: '1.05rem',
-                transition: 'opacity 0.2s',
-                opacity: currentPage === 'dominion' ? 1 : 0.8,
-                cursor: 'pointer'
-              }}
-            >
-              Dominion
-            </a>
-            <a 
               onClick={() => navigateTo('case-records')}
               style={{ 
                 color: '#000', 
@@ -2604,17 +1723,6 @@ export default function YavardiWebsite() {
               Services
             </a>
             <a 
-              onClick={() => navigateTo('dominion')}
-              style={{ 
-                color: '#000', 
-                textDecoration: 'none', 
-                fontWeight: 500,
-                cursor: 'pointer'
-              }}
-            >
-              Dominion
-            </a>
-            <a 
               onClick={() => navigateTo('case-records')}
               style={{ 
                 color: '#000', 
@@ -2649,7 +1757,6 @@ export default function YavardiWebsite() {
       <main>
         {currentPage === 'home' && <HomePage />}
         {currentPage === 'services' && <ServicesPage />}
-        {currentPage === 'dominion' && <DominionPage />}
         {currentPage === 'case-records' && <CaseRecordsPage />}
         {currentPage === 'contact' && <ContactPage />}
       </main>
