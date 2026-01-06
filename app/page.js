@@ -96,11 +96,12 @@ export default function YavardiWebsite() {
             zIndex: 1
           }}>
             <p style={{ 
-              fontSize: 'clamp(1.1rem, 2vw, 1.35rem)', 
+              fontSize: 'clamp(1.35rem, 3vw, 1.85rem)', 
               fontWeight: 900, 
               marginBottom: '1.5rem', 
               color: '#FFFFFF',
-              lineHeight: 1.7
+              lineHeight: 1.7,
+              letterSpacing: '-0.01em'
             }}>
               If the chain of custody breaks on a physical exhibit, the case fails.
             </p>
