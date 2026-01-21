@@ -525,11 +525,11 @@
       </svg>
     </a>
     <p>Technology Governance for Legal Operations</p>
-    <p><a href="/cdn-cgi/l/email-protection#e784888993868493a79e86918695838ec984888a"><span class="__cf_email__" data-cfemail="8be8e4e5ffeae8ffcbf2eafdeaf9efe2a5e8e4e6">[email&#160;protected]</span></a></p>
+    <p><a href="mailto:jfreeman@yavardi.com">jfreeman@yavardi.com</a></p>
     <p class="footer-copyright">© 2025 Yavardi. All rights reserved.</p>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     function toggleMobileMenu() {
       document.getElementById('mobileNav').classList.toggle('open');
     }
@@ -541,3 +541,16 @@
         }
       });
     };
+    
+    window.addEventListener('scroll', handleScrollAnimation);
+    window.addEventListener('load', handleScrollAnimation);
+    
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
