@@ -1,0 +1,10 @@
+{
+  "name": "yavardi-website",
+  "version": "3.0.0",
+  "description": "Yavardi - Technology Governance for Legal Operations",
+  "scripts": {
+    "build": "echo 'Static site - no build required'"
+  },
+  "author": "Jonathan Freeman",
+  "license": "UNLICENSED"
+}
