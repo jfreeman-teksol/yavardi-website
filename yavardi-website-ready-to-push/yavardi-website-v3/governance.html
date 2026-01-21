@@ -203,7 +203,7 @@
       </svg>
     </a>
     <p>Technology Governance for Legal Operations</p>
-    <p><a href="mailto:jfreeman@yavardi.com">jfreeman@yavardi.com</a></p>
+    <p><a href="mailto:contact@yavardi.com">contact@yavardi.com</a></p>
     <p class="footer-copyright">© 2025 Yavardi. All rights reserved.</p>
   </footer>
 
@@ -222,14 +222,19 @@
       });
     });
     
+    const progressFill = document.getElementById('progressFill');
+    
     document.querySelectorAll('.stage-card').forEach(card => {
       card.addEventListener('mouseenter', () => {
         const stage = parseInt(card.dataset.stage);
-        card.style.transform = 'scale(1.05)';
+        const progressPercent = (stage / 4) * 100;
+        progressFill.style.width = progressPercent + '%';
+        card.style.transform = 'translateY(-5px)';
       });
       
       card.addEventListener('mouseleave', () => {
-        card.style.transform = 'scale(1)';
+        progressFill.style.width = '0%';
+        card.style.transform = 'translateY(0)';
       });
     });
   </script>

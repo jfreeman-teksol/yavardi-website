@@ -119,14 +119,20 @@
       </svg>
     </a>
     <p>Technology Governance for Legal Operations</p>
-    <p><a href="mailto:jfreeman@yavardi.com">jfreeman@yavardi.com</a></p>
+    <p><a href="mailto:contact@yavardi.com">contact@yavardi.com</a></p>
     <p class="footer-copyright">© 2025 Yavardi. All rights reserved.</p>
   </footer>
 
   <script>
-    document.querySelectorAll('.scroll-animate').forEach(el => {
-      if (el.getBoundingClientRect().top < window.innerHeight) {
-        el.classList.add('visible');
-      }
-    });
+    const handleScrollAnimation = () => {
+      document.querySelectorAll('.scroll-animate').forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight - 80) {
+          el.classList.add('visible');
+        }
+      });
+    };
+    
+    window.addEventListener('scroll', handleScrollAnimation);
+    window.addEventListener('load', handleScrollAnimation);
+    handleScrollAnimation(); // Run immediately
   </script>
